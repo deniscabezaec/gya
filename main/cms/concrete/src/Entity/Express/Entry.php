@@ -8,11 +8,13 @@ use Concrete\Core\Entity\Express\Entry\ManyAssociation;
 use Concrete\Core\Entity\Express\Entry\OneAssociation;
 use Concrete\Core\Export\ExportableInterface;
 use Concrete\Core\Express\Entry\Formatter\EntryFormatterInterface;
+use Concrete\Core\Express\EntryBuilder\AssociationBuilder;
 use Concrete\Core\Export\Item\Express\Entry as EntryExporter;
 use Concrete\Core\Express\EntryBuilder\AssociationUpdater;
 use Concrete\Core\Permission\ObjectInterface as PermissionObjectInterface;
 use Concrete\Core\Attribute\ObjectInterface as AttributeObjectInterface;
 use Concrete\Core\Support\Facade\Application;
+use Concrete\Core\Utility\Service\Identifier;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -23,6 +25,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeObjectInterface, ExportableInterface
 {
+
     use ObjectTrait;
 
     protected $entryFormatter;
@@ -30,10 +33,8 @@ class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeOb
     /**
      * Returns either an attribute (if passed an attribute handle) or the content
      * of an association, if it matches an association.
-     *
      * @param $nm
      * @param $a
-     *
      * @return $mixed
      */
     public function __call($nm, $a)
@@ -50,9 +51,9 @@ class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeOb
                 if (is_object($collection)) {
                     return $collection->toArray();
                 } else {
-                    return [];
+                    return array();
                 }
-            } elseif ($association instanceof OneAssociation) {
+            } else if ($association instanceof OneAssociation) {
                 return $association->getSelectedEntry();
             }
 
@@ -73,10 +74,9 @@ class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeOb
     }
 
     /**
-     * Checks if this Entry's entity handle is the same as the one specified.
+     * Checks if this Entry's entity handle is the same as the one specified
      *
      * @param $entityHandle
-     *
      * @return bool
      */
     public function is($entityHandle)
@@ -85,7 +85,7 @@ class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeOb
     }
 
     /**
-     * Returns the ID of this Entry.
+     * Returns the ID of this Entry
      *
      * @return mixed
      */
@@ -124,24 +124,22 @@ class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeOb
     public function getObjectAttributeCategory()
     {
         $category = \Core::make('\Concrete\Core\Attribute\Category\ExpressCategory', [$this->getEntity()]);
-
         return $category;
     }
 
     /**
      * @param \Concrete\Core\Attribute\AttributeKeyInterface|string $ak
      * @param bool $createIfNotExists
-     *
      * @return \Concrete\Core\Attribute\AttributeValueInterface|ExpressValue|null
      */
     public function getAttributeValueObject($ak, $createIfNotExists = false)
     {
         if (!is_object($ak)) {
-            $ak = $this->getEntity()->getAttributeKeyCategory()->getAttributeKeyByHandle($ak);
+            $ak = $this->getEntity()->getAttributeKeyCategory()->getByHandle($ak);
         }
         $value = false;
         if (is_object($ak)) {
-            foreach ($this->getAttributes() as $attribute) {
+            foreach($this->getAttributes() as $attribute) {
                 if ($attribute->getAttributeKey()->getAttributeKeyID() == $ak->getAttributeKeyID()) {
                     return $attribute;
                 }
@@ -152,7 +150,6 @@ class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeOb
             $attributeValue = new ExpressValue();
             $attributeValue->setEntry($this);
             $attributeValue->setAttributeKey($ak);
-
             return $attributeValue;
         }
     }
@@ -281,9 +278,9 @@ class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeOb
         $this->associations = $associations;
     }
 
+
     /**
      * @param $handle
-     *
      * @return EntryAssociation|null
      */
     public function getAssociation($handle)
@@ -293,7 +290,7 @@ class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeOb
         }
 
         /**
-         * @var EntryAssociation $entryAssociation
+         * @var $entryAssociation EntryAssociation
          */
         foreach ($this->associations as $entryAssociation) {
             if ($entryAssociation->getAssociation()->getTargetPropertyName() === $handle) {
@@ -303,10 +300,9 @@ class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeOb
     }
 
     /**
-     * Get the EntryAssociation for a given association.
+     * Get the EntryAssociation for a given association
      *
      * @param \Concrete\Core\Entity\Express\Association $association
-     *
      * @return \Concrete\Core\Entity\Express\Entry\Association|null
      */
     public function getEntryAssociation(Association $association)
@@ -314,7 +310,7 @@ class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeOb
         $id = $association->getId();
 
         /**
-         * @var EntryAssociation $entryAssociation
+         * @var $entryAssociation EntryAssociation
          */
         foreach ($this->associations as $entryAssociation) {
             if ($entryAssociation->getAssociation()->getId() === $id) {
@@ -330,7 +326,7 @@ class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeOb
      */
     public function getOwnedByEntry()
     {
-        foreach ($this->associations as $association) {
+        foreach($this->associations as $association) {
             if ($association->getAssociation()->isOwnedByAssociation()) {
                 return $association->getEntry();
             }
@@ -351,15 +347,14 @@ class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeOb
 
     /**
      * Updates the entity dateModified field
-     * Normally called by ExpressValue Entity.
+     * Normally called by ExpressValue Entity
      */
-    public function updateDateModified()
-    {
+    public function updateDateModified() {
         $this->exEntryDateModified = new \DateTime();
     }
 
     /**
-     * Formats the label of this entry to the mask (e.g. %product-name%) or the standard format.
+     * Formats the label of this entry to the mask (e.g. %product-name%) or the standard format
      *
      * @return mixed
      */
@@ -385,11 +380,10 @@ class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeOb
      */
     public function jsonSerialize()
     {
-        $data = [
+        $data = array(
             'exEntryID' => $this->getID(),
-            'label' => $this->getLabel(),
-        ];
-
+            'label' => $this->getLabel()
+        );
         return $data;
     }
 
@@ -456,4 +450,7 @@ class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeOb
     {
         $this->author = $author;
     }
+
+
+
 }

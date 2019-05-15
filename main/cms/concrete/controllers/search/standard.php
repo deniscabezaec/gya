@@ -80,10 +80,6 @@ abstract class Standard extends AbstractController
         $provider = $advancedSearch->getSearchProvider();
         $query = $provider->getSessionCurrentQuery();
         if (is_object($query)) {
-            $itemsPerPage = (int) $this->request->get('fSearchItemsPerPage');
-            if ($itemsPerPage) {
-                $query->setItemsPerPage($itemsPerPage);
-            }
             $result = $provider->getSearchResultFromQuery($query);
             $result->setBaseURL($advancedSearch->getCurrentSearchBaseURL());
         } else {

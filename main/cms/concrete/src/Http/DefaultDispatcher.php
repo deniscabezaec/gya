@@ -104,6 +104,7 @@ class DefaultDispatcher implements DispatcherInterface
 
     private function handleDispatch($request)
     {
+        $callDispatcher = false;
         try {
             $route = $this->router->matchRoute($request)->getRoute();
             $dispatcher = new RouteDispatcher($this->router, $route, []);
@@ -124,10 +125,14 @@ class DefaultDispatcher implements DispatcherInterface
             }
             return $stack->process($request);
         } catch (ResourceNotFoundException $e) {
+            $callDispatcher = true;
         } catch (MethodNotAllowedException $e) {
+            $callDispatcher = true;
         }
-        $c = \Page::getFromRequest($request);
-        $response = $this->app->make(ResponseFactoryInterface::class)->collection($c);
+        if ($callDispatcher) {
+            $c = \Page::getFromRequest($request);
+            $response = $this->app->make(ResponseFactoryInterface::class)->collection($c);
+        }
 
         return $response;
     }

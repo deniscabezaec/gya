@@ -688,7 +688,6 @@ class Controller extends BlockController
         $order = $this->displayOrderDesc ? 'desc' : 'asc';
         $orderBy = $this->getSortColumnKey($this->orderBy, 'filelist');
         if ($orderBy) {
-            $list->getQueryObject()->addSelect($orderBy);
             $list->sortBy($orderBy, $order);
         }
 

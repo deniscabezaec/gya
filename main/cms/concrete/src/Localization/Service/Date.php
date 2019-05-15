@@ -10,7 +10,6 @@ use Concrete\Core\User\User;
 use Punic\Calendar;
 use Punic\Comparer;
 use Punic\Misc;
-use Config;
 
 class Date
 {

@@ -206,11 +206,10 @@ class LoginService implements LoggerAwareInterface, ApplicationAwareInterface
             return [];
         }
 
-        $db = $this->entityManager->getConnection();
-        $queryBuilder = $db->createQueryBuilder();
+        $queryBuilder = $this->entityManager->getConnection()->createQueryBuilder();
 
         $rows = $queryBuilder
-            ->select('g.gName', 'u.uID')->from($db->getDatabasePlatform()->quoteSingleIdentifier('Groups'), 'g')
+            ->select('g.gName', 'u.uID')->from('Groups', 'g')
             ->leftJoin('g', 'UserGroups', 'ug', 'ug.gID=g.gID')
             ->innerJoin('ug', 'Users', 'u', 'ug.uID=u.uID AND (u.uName=? OR u.uEmail=?)')
             ->setParameters([$username, $username])
@@ -223,7 +222,7 @@ class LoginService implements LoggerAwareInterface, ApplicationAwareInterface
             $groups[] = $row['gName'];
         }
 
-        if ($uID == USER_SUPER_ID) {
+        if ($uID === 1) {
             $groups[] = 'SUPER';
         }
 

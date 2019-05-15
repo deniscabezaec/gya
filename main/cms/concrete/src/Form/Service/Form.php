@@ -425,7 +425,7 @@ class Form
             $selectedValue = (string) $valueOrMiscFields;
         }
         if ($selectedValue !== '') {
-            $miscFields['ccm-passed-value'] = h($selectedValue);
+            $miscFields['ccm-passed-value'] = $selectedValue;
         }
         $requestValue = $this->getRequestValue($key);
         if (is_array($requestValue) && isset($requestValue[0]) && is_string($requestValue[0])) {
@@ -475,7 +475,6 @@ class Form
      * @param string $key The name of the element. If $key denotes an array, the ID will start with $key but will have a progressive unique number added; if $key does not denotes an array, the ID attribute will be $key.
      * @param string $selectedCountryCode the code of the Country to be initially selected
      * @param array $configuration Configuration options. Supported keys are:
-     * - 'noCountryText': the text to be displayed when no country is selected
      * - 'required': do users must choose a Country?
      * - 'allowedCountries': an array containing a list of acceptable Country codes. If not set, all the countries will be selectable.
      * - 'linkStateProvinceField': set to true to look for text fields that have a "data-countryfield" attribute with the same value as this Country field name (updating the Country select will automatically update the State/Province list).
@@ -484,7 +483,6 @@ class Form
     public function selectCountry($key, $selectedCountryCode = '', array $configuration = [], array $miscFields = [])
     {
         $configuration += [
-            'noCountryText' => '',
             'required' => false,
             'allowedCountries' => null,
             'linkStateProvinceField' => false,
@@ -525,7 +523,7 @@ class Form
             $id = $key;
         }
         if ($selectedCountryCode === '' || !$configuration['required']) {
-            $optionValues = ['' => (string) $configuration['noCountryText']];
+            $optionValues = ['' => ''];
         } else {
             $optionValues = [];
         }
