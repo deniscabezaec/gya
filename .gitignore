@@ -1,6 +1,8 @@
 *.log
+.gitignore
 
 /.htaccess
+/.idea
 /license.txt
 /readme.html
 /sitemap.xml
