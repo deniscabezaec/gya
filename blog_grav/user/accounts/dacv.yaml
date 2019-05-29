@@ -1,0 +1,11 @@
+state: enabled
+email: deniskabeza@gmail.com
+fullname: 'Denis Cabeza'
+title: Administrador
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$ZfmH4zRUOb7j9aRFUr2lSOveHdlwmWivECg4LM.X0L32EftYARvqC
