@@ -5,6 +5,7 @@ wrapped_site: false
 reverse_proxy_setup: false
 force_ssl: false
 force_lowercase_urls: true
+custom_base_url: /
 username_regex: '^[a-z0-9_-]{3,16}$'
 pwd_regex: '(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'
 intl_enabled: true
@@ -20,7 +21,7 @@ languages:
   override_locale: false
 home:
   alias: /home
-  hide_in_urls: true
+  hide_in_urls: false
 pages:
   theme: agency
   order:
@@ -72,7 +73,7 @@ pages:
   ignore_hidden: true
   url_taxonomy_filters: true
   frontmatter:
-    process_twig: false
+    process_twig: true
     ignore_fields:
       - form
       - forms
@@ -141,8 +142,8 @@ session:
   timeout: 1800
   name: grav-site
   uniqueness: path
-  secure: false
-  httponly: true
+  secure: true
+  httponly: false
   split: true
 gpm:
   releases: stable

@@ -18,7 +18,7 @@ form:
             validate:
                 required: true
                 message: 'Nombre no válido'
-                pattern: '[A-Za-z-]+'
+                pattern: '^[A-Za-z]{3,15}$'
         -
             name: email
             label: Email
@@ -41,6 +41,7 @@ form:
             validate:
                 required: true
                 message: 'Celular no válido!'
+                pattern: '^[0-9]{10}$'
         -
             name: dateb
             label: 'Fecha de Nacimiento'

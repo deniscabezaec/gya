@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1559574176,
-    'checksum' => '127edf113c954a3fd045e91de65770e9',
+    'timestamp' => 1559583908,
+    'checksum' => '0407ff5f6b1be1e4df33657d1fd75791',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -35,7 +35,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1559574176
+                'modified' => 1559583908
             ],
             'themes/agency' => [
                 'file' => 'user/config/themes/agency.yaml',
@@ -748,7 +748,7 @@ node_modules'
             'reverse_proxy_setup' => false,
             'force_ssl' => false,
             'force_lowercase_urls' => true,
-            'custom_base_url' => '',
+            'custom_base_url' => '/',
             'username_regex' => '^[a-z0-9_-]{3,16}$',
             'pwd_regex' => '(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}',
             'intl_enabled' => true,
@@ -767,7 +767,7 @@ node_modules'
             ],
             'home' => [
                 'alias' => '/home',
-                'hide_in_urls' => true
+                'hide_in_urls' => false
             ],
             'pages' => [
                 'theme' => 'agency',
@@ -833,7 +833,7 @@ node_modules'
                 'hide_empty_folders' => false,
                 'url_taxonomy_filters' => true,
                 'frontmatter' => [
-                    'process_twig' => false,
+                    'process_twig' => true,
                     'ignore_fields' => [
                         0 => 'form',
                         1 => 'forms'
@@ -926,8 +926,8 @@ node_modules'
                 'timeout' => 1800,
                 'name' => 'grav-site',
                 'uniqueness' => 'path',
-                'secure' => false,
-                'httponly' => true,
+                'secure' => true,
+                'httponly' => false,
                 'split' => true,
                 'path' => NULL
             ],
