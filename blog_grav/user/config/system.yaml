@@ -1,4 +1,5 @@
 absolute_urls: false
+timezone: America/Guayaquil
 param_sep: ':'
 wrapped_site: false
 reverse_proxy_setup: false
@@ -19,15 +20,16 @@ languages:
   override_locale: false
 home:
   alias: /home
-  hide_in_urls: false
+  hide_in_urls: true
 pages:
   theme: agency
   order:
-    by: default
+    by: title
     dir: asc
   list:
     count: 20
   dateformat:
+    default: 'd-m-Y H:i'
     short: 'jS M Y'
     long: 'F jS \a\t g:ia'
   publish_dates: true

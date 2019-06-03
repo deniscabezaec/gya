@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1559162204,
-    'checksum' => '4baa116ceb3ddbca8bf2e43962c6570c',
+    'timestamp' => 1559574176,
+    'checksum' => '127edf113c954a3fd045e91de65770e9',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -12,6 +12,10 @@ return [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1559162104
+            ],
+            'plugins/email' => [
+                'file' => 'user/config/plugins/email.yaml',
+                'modified' => 1559542049
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
@@ -23,7 +27,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1559161786
+                'modified' => 1559550238
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -31,7 +35,11 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1559162204
+                'modified' => 1559574176
+            ],
+            'themes/agency' => [
+                'file' => 'user/config/themes/agency.yaml',
+                'modified' => 1559539417
             ]
         ],
         'system/config' => [
@@ -63,7 +71,7 @@ return [
         'user/plugins' => [
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1559161786
+                'modified' => 1559536500
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
@@ -91,9 +99,9 @@ return [
         'plugins' => [
             'email' => [
                 'enabled' => true,
-                'from' => NULL,
+                'from' => 'deniskabeza@gmail.com',
                 'from_name' => NULL,
-                'to' => NULL,
+                'to' => 'deniskabeza@gmail.com',
                 'to_name' => NULL,
                 'queue' => [
                     'enabled' => false,
@@ -102,13 +110,13 @@ return [
                     'flush_time_limit' => 100
                 ],
                 'mailer' => [
-                    'engine' => 'sendmail',
+                    'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'localhost',
-                        'port' => 25,
-                        'encryption' => 'none',
-                        'user' => '',
-                        'password' => ''
+                        'server' => 'smtp.gmail.com',
+                        'port' => 465,
+                        'encryption' => 'ssl',
+                        'user' => 'deniskabeza@gmail.com',
+                        'password' => 'Sined@6972.'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail -bs'
@@ -617,18 +625,20 @@ node_modules'
             'salt' => '04HYKLDMhQz6I1'
         ],
         'site' => [
-            'title' => 'Grav',
-            'default_lang' => 'en',
+            'title' => 'Graficación y Animación',
+            'default_lang' => 'es',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@test.com'
+                'name' => 'Denis Cabeza',
+                'email' => 'deniskabeza@gmail.com'
             ],
             'taxonomies' => [
                 0 => 'category',
-                1 => 'tag'
+                1 => 'tag',
+                2 => 'cms',
+                3 => 'blog'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'Blog creado con el fin de mostrar los trabajos realizado en clases'
             ],
             'summary' => [
                 'enabled' => true,
@@ -641,58 +651,58 @@ node_modules'
             'blog' => [
                 'route' => '/blog'
             ],
-            'email' => 'your-email@domain.com',
+            'email' => 'deniskabeza@gmail.com',
             'description' => 'Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.',
             'links' => [
                 0 => [
-                    'title' => 'Services',
+                    'title' => 'Servicios',
                     'url' => '#services'
                 ],
                 1 => [
-                    'title' => 'Portfolio',
+                    'title' => 'Portafolio',
                     'url' => '#portfolio'
                 ],
                 2 => [
-                    'title' => 'About',
+                    'title' => 'Trayectoria',
                     'url' => '#about'
                 ],
                 3 => [
-                    'title' => 'Team',
+                    'title' => 'Sobre Mi',
                     'url' => '#team'
                 ],
                 4 => [
-                    'title' => 'Contact',
+                    'title' => 'Contacto',
                     'url' => '#contact'
                 ]
             ],
             'social' => [
                 0 => [
                     'title' => 'twitter',
-                    'url' => 'http://twitter.com/jekyllrb'
+                    'url' => 'http://www.twitter.com/deniscabezav'
                 ],
                 1 => [
                     'title' => 'facebook',
-                    'url' => NULL
+                    'url' => 'https://www.facebook.com/DenisCabezaV'
                 ],
                 2 => [
                     'title' => 'stack-overflow',
-                    'url' => 'http://stackoverflow.com/questions/tagged/jekyll'
+                    'url' => NULL
                 ],
                 3 => [
                     'title' => 'bitbucket',
-                    'url' => 'http://bitbucket.org/jekyll'
+                    'url' => 'http://bitbucket.org/DenisCabezaV'
                 ],
                 4 => [
                     'title' => 'github',
-                    'url' => 'http://github.com/jekyll'
+                    'url' => 'http://github.com/DenisCabezaV'
                 ]
             ],
             'address' => [
                 0 => [
-                    'line' => '3481 Melrose Place'
+                    'line' => '15 de marzo'
                 ],
                 1 => [
-                    'line' => 'Beverly Hills, CA 90210'
+                    'line' => 'Esmeraldas - Ecuador'
                 ]
             ],
             'quicklinks' => [
@@ -731,7 +741,7 @@ node_modules'
         ],
         'system' => [
             'absolute_urls' => false,
-            'timezone' => '',
+            'timezone' => 'America/Guayaquil',
             'default_locale' => NULL,
             'param_sep' => ':',
             'wrapped_site' => false,
@@ -757,19 +767,19 @@ node_modules'
             ],
             'home' => [
                 'alias' => '/home',
-                'hide_in_urls' => false
+                'hide_in_urls' => true
             ],
             'pages' => [
                 'theme' => 'agency',
                 'order' => [
-                    'by' => 'default',
+                    'by' => 'title',
                     'dir' => 'asc'
                 ],
                 'list' => [
                     'count' => 20
                 ],
                 'dateformat' => [
-                    'default' => NULL,
+                    'default' => 'd-m-Y H:i',
                     'short' => 'jS M Y',
                     'long' => 'F jS \\a\\t g:ia'
                 ],
@@ -939,6 +949,15 @@ node_modules'
         ],
         'scheduler' => [
             
+        ],
+        'themes' => [
+            'agency' => [
+                'enabled' => true,
+                'color' => 'blue',
+                'dropdown' => [
+                    'enabled' => true
+                ]
+            ]
         ]
     ]
 ];

@@ -1,49 +1,65 @@
-title: Grav
+title: 'Graficación y Animación'
+default_lang: es
 author:
-  name: Joe Bloggs
-  email: 'joe@test.com'
+  name: 'Denis Cabeza'
+  email: deniskabeza@gmail.com
+taxonomies:
+  - category
+  - tag
+  - cms
+  - blog
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
-    
-# Site settings
-title: Awesome Title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-
-# Links to include in footer navigation
-# For external links add external: true
+  description: 'Blog creado con el fin de mostrar los trabajos realizado en clases'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog
+email: deniskabeza@gmail.com
+description: 'Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.'
 links:
-  - title: Services
+  -
+    title: Servicios
     url: '#services'
-  - title: Portfolio
+  -
+    title: Portafolio
     url: '#portfolio'
-  - title: About
+  -
+    title: Trayectoria
     url: '#about'
-  - title: Team
-    url: '#team'  
-  - title: Contact
-    url: '#contact'           
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+  -
+    title: 'Sobre Mi'
+    url: '#team'
+  -
+    title: Contacto
+    url: '#contact'
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
-
-# Postal address (add as many lines as necessary)
+  -
+    title: twitter
+    url: 'http://www.twitter.com/deniscabezav'
+  -
+    title: facebook
+    url: 'https://www.facebook.com/DenisCabezaV'
+  -
+    title: stack-overflow
+    url: null
+  -
+    title: bitbucket
+    url: 'http://bitbucket.org/DenisCabezaV'
+  -
+    title: github
+    url: 'http://github.com/DenisCabezaV'
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
-
+  -
+    line: '15 de marzo'
+  -
+    line: 'Esmeraldas - Ecuador'
 quicklinks:
-  - title: Privacy Policy
+  -
+    title: 'Privacy Policy'
     url: '#'
-  - title: Terms of Use
+  -
+    title: 'Terms of Use'
     url: '#'

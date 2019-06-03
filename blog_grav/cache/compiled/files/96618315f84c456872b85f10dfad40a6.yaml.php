@@ -2,68 +2,84 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/config/site.yaml',
-    'modified' => 1559161786,
+    'modified' => 1559550238,
     'data' => [
-        'title' => 'Grav',
+        'title' => 'Graficación y Animación',
+        'default_lang' => 'es',
         'author' => [
-            'name' => 'Joe Bloggs',
-            'email' => 'joe@test.com'
+            'name' => 'Denis Cabeza',
+            'email' => 'deniskabeza@gmail.com'
+        ],
+        'taxonomies' => [
+            0 => 'category',
+            1 => 'tag',
+            2 => 'cms',
+            3 => 'blog'
         ],
         'metadata' => [
-            'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+            'description' => 'Blog creado con el fin de mostrar los trabajos realizado en clases'
         ],
-        'email' => 'your-email@domain.com',
+        'summary' => [
+            'enabled' => true,
+            'format' => 'short',
+            'size' => 300,
+            'delimiter' => '==='
+        ],
+        'blog' => [
+            'route' => '/blog'
+        ],
+        'email' => 'deniskabeza@gmail.com',
         'description' => 'Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.',
         'links' => [
             0 => [
-                'title' => 'Services',
+                'title' => 'Servicios',
                 'url' => '#services'
             ],
             1 => [
-                'title' => 'Portfolio',
+                'title' => 'Portafolio',
                 'url' => '#portfolio'
             ],
             2 => [
-                'title' => 'About',
+                'title' => 'Trayectoria',
                 'url' => '#about'
             ],
             3 => [
-                'title' => 'Team',
+                'title' => 'Sobre Mi',
                 'url' => '#team'
             ],
             4 => [
-                'title' => 'Contact',
+                'title' => 'Contacto',
                 'url' => '#contact'
             ]
         ],
         'social' => [
             0 => [
                 'title' => 'twitter',
-                'url' => 'http://twitter.com/jekyllrb'
+                'url' => 'http://www.twitter.com/deniscabezav'
             ],
             1 => [
                 'title' => 'facebook',
-                'url' => NULL
+                'url' => 'https://www.facebook.com/DenisCabezaV'
             ],
             2 => [
                 'title' => 'stack-overflow',
-                'url' => 'http://stackoverflow.com/questions/tagged/jekyll'
+                'url' => NULL
             ],
             3 => [
                 'title' => 'bitbucket',
-                'url' => 'http://bitbucket.org/jekyll'
+                'url' => 'http://bitbucket.org/DenisCabezaV'
             ],
             4 => [
                 'title' => 'github',
-                'url' => 'http://github.com/jekyll'
+                'url' => 'http://github.com/DenisCabezaV'
             ]
         ],
         'address' => [
             0 => [
-                'line' => '3481 Melrose Place'
+                'line' => '15 de marzo'
             ],
             1 => [
-                'line' => 'Beverly Hills, CA 90210'
+                'line' => 'Esmeraldas - Ecuador'
             ]
         ],
         'quicklinks' => [
