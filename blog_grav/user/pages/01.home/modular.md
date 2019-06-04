@@ -1,9 +1,9 @@
 ---
-title: Agency
+title: 'Graficación y Animación'
 menu: Home
 onpage_menu: true
 content:
-    items: @self.modular
+    items: '@self.modular'
     order:
         by: default
         dir: asc
@@ -14,7 +14,5 @@ content:
             - _about
             - _team
             - _clients
-
 ---
-
 

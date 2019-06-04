@@ -1,5 +1,6 @@
 ---
-title: Thank you !
+title: Gracias!
 ---
 
-Your email was sent. Thank you ! 
+Su correo electrónico fue enviado.
+<br><a href="/">Volver a Inicio</a> 

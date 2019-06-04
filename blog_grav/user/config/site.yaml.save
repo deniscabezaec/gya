@@ -1,0 +1,65 @@
+title: 'Graficación y Animación'
+default_lang: en
+author:
+  name: 'Denis Cabeza'
+  email: deniskabeza@gmail.com
+taxonomies:
+  - category
+  - tag
+  - cms
+  - flatfile
+metadata:
+  description: 'file CMS'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog
+email: your-email@domain.com
+description: 'Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.'
+links:
+  -
+    title: Services
+    url: '#services'
+  -
+    title: Portfolio
+    url: '#portfolio'
+  -
+    title: About
+    url: '#about'
+  -
+    title: Team
+    url: '#team'
+  -
+    title: Contact
+    url: '#contact'
+social:
+  -
+    title: twitter
+    url: 'http://twitter.com/jekyllrb'
+  -
+    title: facebook
+    url: null
+  -
+    title: stack-overflow
+    url: 'http://stackoverflow.com/questions/tagged/jekyll'
+  -
+    title: bitbucket
+    url: 'http://bitbucket.org/jekyll'
+  -
+    title: github
+    url: 'http://github.com/jekyll'
+address:
+  -
+    line: '3481 Melrose Place'
+  -
+    line: 'Beverly Hills, CA 90210'
+quicklinks:
+  -
+    title: 'Privacy Policy'
+    url: '#'
+  -
+    title: 'Terms of Use'
+    url: '#'
