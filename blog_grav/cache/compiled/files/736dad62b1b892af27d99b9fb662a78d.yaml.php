@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/config/plugins/email.yaml',
-    'modified' => 1559599918,
+    'modified' => 1559639508,
     'data' => [
         'enabled' => true,
         'from' => 'deniskabeza@gmail.com',
@@ -16,7 +16,7 @@ return [
         'mailer' => [
             'engine' => 'smtp',
             'smtp' => [
-                'server' => 'smtp.google.com',
+                'server' => 'smtp.gmail.com',
                 'port' => 465,
                 'encryption' => 'ssl',
                 'user' => 'deniskabeza@gmail.com',

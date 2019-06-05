@@ -47,12 +47,11 @@ form:
             classes: form-control
             autofocus: 'off'
             autocomplete: 'on'
-            placeholder: 'El año no debe ser mayor a 2001'
             type: date
             position: left
             validate:
                 required: true
-                message: 'Fecha no válida!'
+                message: 'Fecha no válida, de ser mayor de edad!'
                 min: '1960-01-01'
                 max: '2001-06-03'
         -
@@ -68,9 +67,9 @@ form:
             name: genero
             label: Género
             classes: form-control
-            placeholder: Seleccione
             autofocus: 'off'
             autocomplete: 'on'
+            placeholder: Seleccione
             type: select
             position: right
             options:

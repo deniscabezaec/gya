@@ -9,7 +9,7 @@ queue:
 mailer:
   engine: smtp
   smtp:
-    server: smtp.google.com
+    server: smtp.gmail.com
     port: 465
     encryption: ssl
     user: deniskabeza@gmail.com

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1559637942,
-    'checksum' => '718ec76f44f4c9fb2f5bb1f0db13ce00',
+    'timestamp' => 1559639508,
+    'checksum' => 'a2a6bd1ad9e780c23c2194679e76f642',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -15,7 +15,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1559599918
+                'modified' => 1559639508
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
@@ -108,7 +108,7 @@ return [
                 'mailer' => [
                     'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'smtp.google.com',
+                        'server' => 'smtp.gmail.com',
                         'port' => 465,
                         'encryption' => 'ssl',
                         'user' => 'deniskabeza@gmail.com',
