@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1559642849,
-    'checksum' => 'a2a6bd1ad9e780c23c2194679e76f642',
+    'timestamp' => 1560272363,
+    'checksum' => '79c3424729c1428c1510e66d06465e46',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -13,9 +13,25 @@ return [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1559591887
             ],
+            'plugins/admin' => [
+                'file' => 'user/config/plugins/admin.yaml',
+                'modified' => 1559734743
+            ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
                 'modified' => 1559639508
+            ],
+            'plugins/ganalytics' => [
+                'file' => 'user/config/plugins/ganalytics.yaml',
+                'modified' => 1559711906
+            ],
+            'plugins/gosquared' => [
+                'file' => 'user/config/plugins/gosquared.yaml',
+                'modified' => 1559711784
+            ],
+            'plugins/problems' => [
+                'file' => 'user/config/plugins/problems.yaml',
+                'modified' => 1559735525
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
@@ -27,7 +43,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1559597709
+                'modified' => 1559735557
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -35,7 +51,19 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1559591879
+                'modified' => 1560272363
+            ],
+            'themes/agency' => [
+                'file' => 'user/config/themes/agency.yaml',
+                'modified' => 1560272344
+            ],
+            'themes/notepad' => [
+                'file' => 'user/config/themes/notepad.yaml',
+                'modified' => 1560272023
+            ],
+            'themes/pinpress' => [
+                'file' => 'user/config/themes/pinpress.yaml',
+                'modified' => 1560272252
             ]
         ],
         'system/config' => [
@@ -84,6 +112,10 @@ return [
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1559591628
+            ],
+            'plugins/ganalytics' => [
+                'file' => 'user/plugins/ganalytics/ganalytics.yaml',
+                'modified' => 1559711846
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
@@ -154,8 +186,8 @@ return [
             ],
             'admin' => [
                 'enabled' => true,
-                'route' => '/admin',
-                'cache_enabled' => false,
+                'route' => '/my',
+                'cache_enabled' => true,
                 'theme' => 'grav',
                 'logo_text' => '',
                 'body_classes' => '',
@@ -192,9 +224,9 @@ return [
                 ],
                 'edit_mode' => 'normal',
                 'frontend_preview_target' => 'inline',
-                'show_github_msg' => true,
+                'show_github_msg' => false,
                 'pages_list_display_field' => 'title',
-                'google_fonts' => false,
+                'google_fonts' => true,
                 'admin_icons' => 'line-awesome',
                 'enable_auto_updates_check' => true,
                 'notifications' => [
@@ -210,15 +242,42 @@ return [
                         1 => '/modular'
                     ],
                     'history' => [
-                        'daily' => 30,
-                        'monthly' => 12,
-                        'visitors' => 20
+                        'daily' => '30',
+                        'monthly' => '12',
+                        'visitors' => '20'
                     ]
+                ],
+                'pagemedia' => [
+                    'resize_width' => 0,
+                    'resize_height' => 0,
+                    'res_min_width' => 0,
+                    'res_min_height' => 0,
+                    'res_max_width' => 0,
+                    'res_max_height' => 0,
+                    'resize_quality' => 0.8
                 ]
             ],
             'problems' => [
                 'enabled' => true,
-                'built_in_css' => true
+                'built_in_css' => false
+            ],
+            'ganalytics' => [
+                'enabled' => true,
+                'trackingId' => 'UA-102977672-2',
+                'position' => 'head',
+                'objectName' => 'ga',
+                'forceSsl' => true,
+                'async' => true,
+                'anonymizeIp' => false,
+                'blockedIps' => [
+                    
+                ],
+                'cookieConfig' => true,
+                'cookieName' => '_ga',
+                'cookieDomain' => '',
+                'cookieExpires' => 63072000,
+                'debugStatus' => false,
+                'debugTrace' => false
             ],
             'login' => [
                 'enabled' => true,
@@ -277,6 +336,12 @@ return [
                         'send_welcome_email' => false
                     ]
                 ]
+            ],
+            'gosquared' => [
+                'enabled' => true,
+                'gsn' => 'UA-102977672-2',
+                'gsInAdmin' => true,
+                'gsLoadLate' => true
             ]
         ],
         'backups' => [
@@ -622,7 +687,7 @@ node_modules'
         ],
         'site' => [
             'title' => 'Graficación y Animación',
-            'default_lang' => 'en',
+            'default_lang' => 'es',
             'author' => [
                 'name' => 'Denis Cabeza',
                 'email' => 'deniskabeza@gmail.com'
@@ -737,7 +802,7 @@ node_modules'
         ],
         'system' => [
             'absolute_urls' => false,
-            'timezone' => '',
+            'timezone' => 'America/Guayaquil',
             'default_locale' => NULL,
             'param_sep' => ':',
             'wrapped_site' => false,
@@ -775,7 +840,7 @@ node_modules'
                     'count' => 20
                 ],
                 'dateformat' => [
-                    'default' => NULL,
+                    'default' => 'd-m-Y H:i',
                     'short' => 'jS M Y',
                     'long' => 'F jS \\a\\t g:ia'
                 ],
@@ -816,7 +881,7 @@ node_modules'
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
-                'redirect_default_code' => 302,
+                'redirect_default_code' => '302',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'
@@ -837,7 +902,7 @@ node_modules'
                 ]
             ],
             'cache' => [
-                'enabled' => false,
+                'enabled' => true,
                 'check' => [
                     'method' => 'file'
                 ],
@@ -849,7 +914,7 @@ node_modules'
                 'clear_images_by_default' => true,
                 'cli_compatibility' => false,
                 'lifetime' => 604800,
-                'gzip' => false,
+                'gzip' => true,
                 'allow_webserver_gzip' => false,
                 'redis' => [
                     'socket' => false
@@ -913,7 +978,8 @@ node_modules'
                 'allowed_fallback_types' => [
                     
                 ],
-                'auto_metadata_exif' => false
+                'auto_metadata_exif' => false,
+                'upload_limit' => 8388608
             ],
             'session' => [
                 'enabled' => true,
@@ -921,8 +987,8 @@ node_modules'
                 'timeout' => 1800,
                 'name' => 'grav-site',
                 'uniqueness' => 'path',
-                'secure' => false,
-                'httponly' => true,
+                'secure' => true,
+                'httponly' => false,
                 'split' => true,
                 'path' => NULL
             ],
@@ -944,6 +1010,24 @@ node_modules'
         ],
         'scheduler' => [
             
+        ],
+        'themes' => [
+            'agency' => [
+                'enabled' => true,
+                'color' => 'blue',
+                'dropdown' => [
+                    'enabled' => true
+                ]
+            ],
+            'notepad' => [
+                'enabled' => true
+            ],
+            'pinpress' => [
+                'enabled' => true,
+                'dropdown' => [
+                    'enabled' => false
+                ]
+            ]
         ]
     ]
 ];

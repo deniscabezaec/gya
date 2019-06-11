@@ -1,7 +1,5 @@
 ---
 title: 'Graficación y Animación'
-menu: Home
-onpage_menu: true
 content:
     items: '@self.modular'
     order:
@@ -14,5 +12,8 @@ content:
             - _about
             - _team
             - _clients
+menu: Home
+never_cache_twig: false
+onpage_menu: true
 ---
 

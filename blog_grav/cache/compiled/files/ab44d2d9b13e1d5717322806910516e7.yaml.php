@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/data/feed/1b2bfbd511f3dd181c4173d4cca7e474.yaml',
-    'modified' => 1559664677,
+    'modified' => 1559768807,
     'data' => [
-        'last_checked' => 1559664677,
+        'last_checked' => 1559768807,
         'data' => [
             0 => [
                 'title' => 'Grav 1.6 Released!',
@@ -16,7 +16,7 @@ return [
                 'title' => 'Important Theme Updates',
                 'url' => 'https://getgrav.org/blog/important-theme-updates',
                 'date' => 1553169300,
-                'nicetime' => '2 meses antes'
+                'nicetime' => '3 meses antes'
             ],
             2 => [
                 'title' => 'All RocketTheme Grav Themes 50% Off for Black Friday',

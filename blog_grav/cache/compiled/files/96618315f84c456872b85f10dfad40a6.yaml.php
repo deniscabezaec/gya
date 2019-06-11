@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/config/site.yaml',
-    'modified' => 1559597709,
+    'modified' => 1559735557,
     'data' => [
         'title' => 'Graficación y Animación',
-        'default_lang' => 'en',
+        'default_lang' => 'es',
         'author' => [
             'name' => 'Denis Cabeza',
             'email' => 'deniskabeza@gmail.com'

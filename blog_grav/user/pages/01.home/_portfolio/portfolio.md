@@ -6,15 +6,16 @@ portfolios:
         title: Figuritas
         subtitle: 'Diseño de Figuritas'
         layout: default
+        redirect: 'https://www.facebook.com'
         modalid: 1
         date: 1405641600
         img: f_asteriscos.jpg
         thumbnail: f_asteriscos.jpg
         alt: image-alt
-        projectdate: 'Junio 2019'
+        projectdate: '04 Junio 2019'
         client: GyA
         category: Figuras
-        description: '<label for="valor" class="mr-sm-2">Ingrese un número:</label><br><input type="text" id="valor" onkeyup="myFunction()"/><br><br><code id="figura" class="fig"></code>'
+        description: '<label for="valor">Ingrese un número:</label><br><input type="text" id="valor" onkeyup="myFunction()"/><br><br><code id="figura" class="fig"></code>'
 ---
 
 ## PORTAFOLIO
