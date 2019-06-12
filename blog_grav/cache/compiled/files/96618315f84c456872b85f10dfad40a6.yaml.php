@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/config/site.yaml',
-    'modified' => 1559735557,
+    'modified' => 1560370342,
     'data' => [
         'title' => 'Graficación y Animación',
         'default_lang' => 'es',
@@ -11,86 +11,60 @@ return [
             'email' => 'deniskabeza@gmail.com'
         ],
         'taxonomies' => [
-            0 => 'category',
-            1 => 'tag',
-            2 => 'cms',
-            3 => 'flatfile'
+            0 => 'tag'
         ],
         'metadata' => [
-            'description' => 'Blog creado con tecnología flat-file CMS para la materia graficación y animación.'
+            'description' => 'Grav is a flat-file CMS'
         ],
         'summary' => [
             'enabled' => true,
             'format' => 'short',
-            'size' => 300,
+            'size' => 100,
             'delimiter' => '==='
         ],
         'blog' => [
             'route' => '/blog'
         ],
-        'email' => 'deniskabeza@gmail.com',
-        'description' => 'Blog creado con tecnología flat-file CMS para la materia graficación y animación.',
+        'description' => 'Html - Css - Js - Docker - Git',
+        'owner' => [
+            'name' => 'Alex Kbza',
+            'email' => 'alexkbzav@gmail.com',
+            'description' => 'Decide, Aprende y Emprende',
+            'twitter' => 'alexkbzav',
+            'facebook' => 'alexkbzav',
+            'github' => NULL,
+            'instagram' => 'alexkbzav',
+            'google_plus' => NULL
+        ],
+        'logo' => '/user/themes/notepad/images/logo.png',
         'links' => [
             0 => [
-                'title' => 'Servicios',
-                'url' => '#services'
-            ],
-            1 => [
-                'title' => 'Portafolio',
-                'url' => '#portfolio'
-            ],
-            2 => [
-                'title' => 'Trayectoria',
-                'url' => '#about'
-            ],
-            3 => [
                 'title' => 'Sobre Mi',
-                'url' => '#team'
-            ],
-            4 => [
-                'title' => 'Contacto',
-                'url' => '#contact'
+                'url' => '/about'
             ]
         ],
-        'social' => [
-            0 => [
-                'title' => 'twitter',
-                'url' => 'http://www.twitter.com/deniscabezav'
-            ],
-            1 => [
-                'title' => 'facebook',
-                'url' => 'http://www.facebook.com/deniscabezav'
-            ],
-            2 => [
-                'title' => 'stack-overflow',
-                'url' => 'http://stackoverflow.com/questions/tagged/jekyll'
-            ],
-            3 => [
-                'title' => 'bitbucket',
-                'url' => 'http://bitbucket.org/deniskabezav'
-            ],
-            4 => [
-                'title' => 'github',
-                'url' => 'http://github.com/deniscabezav'
-            ]
+        'include' => [
+            0 => '.htaccess'
         ],
-        'address' => [
-            0 => [
-                'line' => '15 de marzo'
-            ],
-            1 => [
-                'line' => 'Esmeraldas - Ecuador'
-            ]
-        ],
-        'quicklinks' => [
-            0 => [
-                'title' => 'Privacy Policy',
-                'url' => '#'
-            ],
-            1 => [
-                'title' => 'Terms of Use',
-                'url' => '#'
-            ]
+        'exclude' => [
+            0 => 'lib',
+            1 => 'config.rb',
+            2 => 'Gemfile',
+            3 => 'Capfile',
+            4 => 'Gemfile.lock',
+            5 => 'config',
+            6 => 'log',
+            7 => 'Rakefile',
+            8 => 'Rakefile.rb',
+            9 => 'tmp',
+            10 => 'less',
+            11 => '*.sublime-project',
+            12 => '*.sublime-workspace',
+            13 => 'test',
+            14 => 'spec',
+            15 => 'Gruntfile.js',
+            16 => 'package.json',
+            17 => 'node_modules'
         ]
     ]
 ];

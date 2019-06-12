@@ -2,25 +2,19 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/config/system.yaml',
-    'modified' => 1560272363,
+    'modified' => 1560324727,
     'data' => [
         'absolute_urls' => false,
         'timezone' => 'America/Guayaquil',
-        'default_locale' => NULL,
         'param_sep' => ':',
         'wrapped_site' => false,
         'reverse_proxy_setup' => false,
         'force_ssl' => false,
         'force_lowercase_urls' => true,
-        'custom_base_url' => '',
         'username_regex' => '^[a-z0-9_-]{3,16}$',
         'pwd_regex' => '(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}',
         'intl_enabled' => true,
         'languages' => [
-            'supported' => [
-                
-            ],
-            'default_lang' => NULL,
             'include_default_lang' => true,
             'pages_fallback_only' => false,
             'translations' => true,
@@ -30,11 +24,11 @@ return [
             'override_locale' => false
         ],
         'home' => [
-            'alias' => '/home',
+            'alias' => '/blog',
             'hide_in_urls' => false
         ],
         'pages' => [
-            'theme' => 'agency',
+            'theme' => 'notepad',
             'order' => [
                 'by' => 'default',
                 'dir' => 'asc'
@@ -43,7 +37,6 @@ return [
                 'count' => 20
             ],
             'dateformat' => [
-                'default' => 'd-m-Y H:i',
                 'short' => 'jS M Y',
                 'long' => 'F jS \\a\\t g:ia'
             ],
@@ -53,13 +46,13 @@ return [
                 'twig' => false
             ],
             'twig_first' => false,
-            'never_cache_twig' => false,
+            'never_cache_twig' => true,
             'events' => [
                 'page' => true,
                 'twig' => true
             ],
             'markdown' => [
-                'extra' => true,
+                'extra' => false,
                 'auto_line_breaks' => false,
                 'auto_url_links' => false,
                 'escape_markup' => false,
@@ -77,9 +70,7 @@ return [
                 5 => 'rss',
                 6 => 'atom'
             ],
-            'append_url_extension' => '',
             'expires' => 604800,
-            'cache_control' => NULL,
             'last_modified' => false,
             'etag' => false,
             'vary_accept_encoding' => false,
@@ -94,7 +85,6 @@ return [
                 1 => '.idea'
             ],
             'ignore_hidden' => true,
-            'hide_empty_folders' => false,
             'url_taxonomy_filters' => true,
             'frontmatter' => [
                 'process_twig' => false,
@@ -102,7 +92,8 @@ return [
                     0 => 'form',
                     1 => 'forms'
                 ]
-            ]
+            ],
+            'markdown_extra' => false
         ],
         'cache' => [
             'enabled' => true,
@@ -117,11 +108,8 @@ return [
             'clear_images_by_default' => true,
             'cli_compatibility' => false,
             'lifetime' => 604800,
-            'gzip' => true,
-            'allow_webserver_gzip' => false,
-            'redis' => [
-                'socket' => false
-            ]
+            'gzip' => false,
+            'allow_webserver_gzip' => false
         ],
         'twig' => [
             'cache' => true,
@@ -149,7 +137,7 @@ return [
             ]
         ],
         'errors' => [
-            'display' => 0,
+            'display' => 1,
             'log' => true
         ],
         'log' => [
@@ -175,12 +163,6 @@ return [
         ],
         'media' => [
             'enable_media_timestamp' => false,
-            'unsupported_inline_types' => [
-                
-            ],
-            'allowed_fallback_types' => [
-                
-            ],
             'auto_metadata_exif' => false,
             'upload_limit' => 8388608
         ],
@@ -190,14 +172,12 @@ return [
             'timeout' => 1800,
             'name' => 'grav-site',
             'uniqueness' => 'path',
-            'secure' => true,
-            'httponly' => false,
-            'split' => true,
-            'path' => NULL
+            'secure' => false,
+            'httponly' => true,
+            'split' => true
         ],
         'gpm' => [
             'releases' => 'stable',
-            'proxy_url' => NULL,
             'method' => 'auto',
             'verify_peer' => true,
             'official_gpm_only' => true

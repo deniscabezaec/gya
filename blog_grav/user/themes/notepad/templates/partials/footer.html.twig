@@ -1,12 +1,12 @@
 <footer class="summer-site-footer">
     <div class="copyright">
-         <section>All content copyright <a href="{{ base_url_absolute }}">{{ site.owner.name }}</a> &copy; All rights reserved.</section>
+         <section>All content copyright <a href="{{ base_url_absolute }}"><spam>{{ site.owner.name }}</spam></a> &copy; All rights reserved.</section>
          <section>Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Grav</a></section>
     </div>
     <div class="social-icons">
         
         {% if site.owner.twitter %}
-        <a href="http://twitter.com/{{ site.owner.twitter }}">
+        <a href="http://twitter.com/{{ site.owner.twitter }}" target="_blank">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-twitter fa-stack-1x"></i>
@@ -22,7 +22,7 @@
         </a>
         {% endif %}
         {% if site.owner.instagram %}
-        <a href="http://instagram.com/{{ site.owner.instagram }}">
+        <a href="http://instagram.com/{{ site.owner.instagram }}" target="_blank">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-instagram fa-stack-1x"></i>
@@ -30,7 +30,7 @@
         </a>
         {% endif %}
         {% if site.owner.github %}
-        <a href="http://github.com/{{ site.owner.github }}">
+        <a href="http://github.com/{{ site.owner.github }}" target="_blank">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-github fa-stack-1x"></i>
@@ -38,7 +38,7 @@
         </a>
         {% endif %}
         {% if site.owner.facebook %}
-        <a href="http://facebook.com/{{ site.owner.facebook }}">
+        <a href="http://facebook.com/{{ site.owner.facebook }}" target="_blank">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-facebook fa-stack-1x"></i>

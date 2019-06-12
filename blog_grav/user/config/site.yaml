@@ -4,62 +4,49 @@ author:
   name: 'Denis Cabeza'
   email: deniskabeza@gmail.com
 taxonomies:
-  - category
   - tag
-  - cms
-  - flatfile
 metadata:
-  description: 'Blog creado con tecnología flat-file CMS para la materia graficación y animación.'
+  description: 'Grav is a flat-file CMS'
 summary:
   enabled: true
   format: short
-  size: 300
+  size: 100
   delimiter: '==='
 blog:
   route: /blog
-email: deniskabeza@gmail.com
-description: 'Blog creado con tecnología flat-file CMS para la materia graficación y animación.'
+description: 'Html - Css - Js - Docker - Git'
+owner:
+  name: 'Alex Kbza'
+  email: alexkbzav@gmail.com
+  description: 'Decide, Aprende y Emprende'
+  twitter: alexkbzav
+  facebook: alexkbzav
+  github: null
+  instagram: alexkbzav
+  google_plus: null
+logo: /user/themes/notepad/images/logo.png
 links:
   -
-    title: Servicios
-    url: '#services'
-  -
-    title: Portafolio
-    url: '#portfolio'
-  -
-    title: Trayectoria
-    url: '#about'
-  -
     title: 'Sobre Mi'
-    url: '#team'
-  -
-    title: Contacto
-    url: '#contact'
-social:
-  -
-    title: twitter
-    url: 'http://www.twitter.com/deniscabezav'
-  -
-    title: facebook
-    url: 'http://www.facebook.com/deniscabezav'
-  -
-    title: stack-overflow
-    url: 'http://stackoverflow.com/questions/tagged/jekyll'
-  -
-    title: bitbucket
-    url: 'http://bitbucket.org/deniskabezav'
-  -
-    title: github
-    url: 'http://github.com/deniscabezav'
-address:
-  -
-    line: '15 de marzo'
-  -
-    line: 'Esmeraldas - Ecuador'
-quicklinks:
-  -
-    title: 'Privacy Policy'
-    url: '#'
-  -
-    title: 'Terms of Use'
-    url: '#'
+    url: /about
+include:
+  - .htaccess
+exclude:
+  - lib
+  - config.rb
+  - Gemfile
+  - Capfile
+  - Gemfile.lock
+  - config
+  - log
+  - Rakefile
+  - Rakefile.rb
+  - tmp
+  - less
+  - '*.sublime-project'
+  - '*.sublime-workspace'
+  - test
+  - spec
+  - Gruntfile.js
+  - package.json
+  - node_modules

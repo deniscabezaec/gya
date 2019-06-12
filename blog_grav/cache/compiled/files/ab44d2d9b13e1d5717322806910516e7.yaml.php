@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/data/feed/1b2bfbd511f3dd181c4173d4cca7e474.yaml',
-    'modified' => 1559768807,
+    'modified' => 1560324460,
     'data' => [
-        'last_checked' => 1559768807,
+        'last_checked' => 1560324460,
         'data' => [
             0 => [
                 'title' => 'Grav 1.6 Released!',
@@ -22,7 +22,7 @@ return [
                 'title' => 'All RocketTheme Grav Themes 50% Off for Black Friday',
                 'url' => 'https://getgrav.org/blog/rockettheme-blackfriday-2018',
                 'date' => 1542790800,
-                'nicetime' => '6 meses antes'
+                'nicetime' => '7 meses antes'
             ],
             3 => [
                 'title' => 'We\'re Moving Chat from Slack to Discord',
@@ -58,13 +58,13 @@ return [
                 'title' => 'macOS 10.14 Mojave Apache Setup: Upgrading Homebrew',
                 'url' => 'https://getgrav.org/blog/macos-mojave-apache-upgrade-homebrew',
                 'date' => 1537876800,
-                'nicetime' => '8 meses antes'
+                'nicetime' => '9 meses antes'
             ],
             9 => [
                 'title' => 'macOS 10.14 Mojave Apache Setup: SSL',
                 'url' => 'https://getgrav.org/blog/macos-mojave-apache-ssl',
                 'date' => 1537873380,
-                'nicetime' => '8 meses antes'
+                'nicetime' => '9 meses antes'
             ]
         ]
     ]

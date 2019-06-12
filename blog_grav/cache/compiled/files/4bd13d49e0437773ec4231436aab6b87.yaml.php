@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/accounts/dacv.yaml',
-    'modified' => 1559592040,
+    'modified' => 1560292012,
     'data' => [
         'state' => 'enabled',
-        'email' => 'deniskabeza@gmail.com',
+        'email' => 'maquia2796@gmail.com',
         'fullname' => 'Denis Cabeza',
         'title' => 'Administrador',
         'access' => [
@@ -17,13 +17,9 @@ return [
                 'login' => 'true'
             ]
         ],
-        'hashed_password' => '$2y$10$UjvYEt5wMluGEEgbtd2A3umY32T/HoRgrrhnXodrVtX5f2CFdR3em',
-        'pw_resets' => [
-            0 => 1559454195
-        ],
-        'reset' => 'b83d7c433d140553ac4fab10ba52f58c::1560058995',
+        'hashed_password' => '$2y$10$iKUg7YozcdLZSY795iU53u48mmKc8zbiiMq5.gvIl6SzTRJ4z70me',
         'language' => 'es',
         'twofa_enabled' => false,
-        'twofa_secret' => 'SRC6SAF54NP73HT5HR26BA553UCNRPRC'
+        'twofa_secret' => 'QK3FHRLKJMJQZIR3HQSKQIRMJZ2TAXVG'
     ]
 ];
