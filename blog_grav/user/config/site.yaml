@@ -29,6 +29,9 @@ links:
   -
     title: 'Sobre Mi'
     url: /about
+  -
+    title: Contacto
+    url: /contacto
 include:
   - .htaccess
 exclude:

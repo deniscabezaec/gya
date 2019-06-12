@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1560370411,
-    'checksum' => 'f6b1f683abc589beb01faaa8ebae3dc5',
+    'timestamp' => 1560379304,
+    'checksum' => 'ba07bea9a615c6b213365cdc4d47b353',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -12,6 +12,10 @@ return [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1560280398
+            ],
+            'plugins/ganalytics' => [
+                'file' => 'user/config/plugins/ganalytics.yaml',
+                'modified' => 1560379304
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
@@ -23,7 +27,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1560370342
+                'modified' => 1560372954
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -72,6 +76,10 @@ return [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
                 'modified' => 1560280348
+            ],
+            'plugins/ganalytics' => [
+                'file' => 'user/plugins/ganalytics/ganalytics.yaml',
+                'modified' => 1560379256
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
@@ -174,6 +182,24 @@ return [
                         'visitors' => 20
                     ]
                 ]
+            ],
+            'ganalytics' => [
+                'enabled' => true,
+                'trackingId' => 'UA-102977672-2',
+                'position' => 'head',
+                'objectName' => 'ga',
+                'forceSsl' => true,
+                'async' => true,
+                'anonymizeIp' => false,
+                'blockedIps' => [
+                    
+                ],
+                'cookieConfig' => false,
+                'cookieName' => '_ga',
+                'cookieDomain' => '',
+                'cookieExpires' => 63072000,
+                'debugStatus' => false,
+                'debugTrace' => false
             ],
             'form' => [
                 'enabled' => true,
@@ -677,6 +703,10 @@ node_modules'
                 0 => [
                     'title' => 'Sobre Mi',
                     'url' => '/about'
+                ],
+                1 => [
+                    'title' => 'Contacto',
+                    'url' => '/contacto'
                 ]
             ],
             'include' => [

@@ -1,5 +1,5 @@
 ---
-title: 'Latest Posts'
+title: 'Alex Kbza'
 sitemap:
     changefreq: monthly
     priority: 1.03
