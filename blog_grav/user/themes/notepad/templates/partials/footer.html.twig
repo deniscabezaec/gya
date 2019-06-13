@@ -1,12 +1,27 @@
 <footer class="summer-site-footer">
     <div class="copyright">
-         <section>All content copyright <a href="{{ base_url_absolute }}"><spam>{{ site.owner.name }}</spam></a> &copy; All rights reserved.</section>
-         <section>Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Grav</a></section>
+         <section>All content copyright <a href="{{ base_url_absolute }}"><strong>{{ site.owner.name }}</strong></a> &copy; All rights reserved.</section>
     </div>
     <div class="social-icons">
         
+        {% if site.owner.facebook %}
+        <a href="https://facebook.com/{{ site.owner.facebook }}" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+            </span>
+        </a>
+        {% endif %}
+        {% if site.owner.linkedin %}
+        <a href="https://linkedin.com/in/{{ site.owner.linkedin }}" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-linkedin fa-stack-1x"></i>
+            </span>
+        </a>
+        {% endif %}
         {% if site.owner.twitter %}
-        <a href="http://twitter.com/{{ site.owner.twitter }}" target="_blank">
+        <a href="https://twitter.com/{{ site.owner.twitter }}" target="_blank">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-twitter fa-stack-1x"></i>
@@ -22,7 +37,7 @@
         </a>
         {% endif %}
         {% if site.owner.instagram %}
-        <a href="http://instagram.com/{{ site.owner.instagram }}" target="_blank">
+        <a href="https://instagram.com/{{ site.owner.instagram }}" target="_blank">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-instagram fa-stack-1x"></i>
@@ -30,18 +45,10 @@
         </a>
         {% endif %}
         {% if site.owner.github %}
-        <a href="http://github.com/{{ site.owner.github }}" target="_blank">
+        <a href="https://github.com/{{ site.owner.github }}" target="_blank">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-github fa-stack-1x"></i>
-            </span>
-        </a>
-        {% endif %}
-        {% if site.owner.facebook %}
-        <a href="http://facebook.com/{{ site.owner.facebook }}" target="_blank">
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                <i class="fa fa-facebook fa-stack-1x"></i>
             </span>
         </a>
         {% endif %}

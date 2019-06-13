@@ -2,10 +2,10 @@
 <html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
 <head>
     <meta charset="utf-8">
-    <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+    <!-- (1) Optimize for mobile versions: https://goo.gl/EOpFl -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     {% include 'partials/metadata.html.twig' %}
@@ -36,7 +36,7 @@
     {% block stylesheets %}
         {% do assets.addCss('theme://css/font-awesome.min.css') %}
         {% do assets.addCss('theme://css/vendor/normalizeb146.css') %}
-        {% do assets.addCss('theme://css/vendor/foundation.minb146.css') %}
+        <!--{% do assets.addCss('theme://css/vendor/foundation.minb146.css') %}-->
         {% do assets.addCss('theme://css/styleb146.css') %}
         {% do assets.addCss('theme://css/postb146.css') %}
     {% endblock %}

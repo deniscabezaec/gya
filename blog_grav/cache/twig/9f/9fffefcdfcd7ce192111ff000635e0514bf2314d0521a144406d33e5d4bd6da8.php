@@ -38,36 +38,6 @@ class __TwigTemplate_77a01251022dae4b5feca9fb8e6df3c0454cec64a9b3a448d142237445f
         $this->getAttribute(($context["assets"] ?? null), "addJs", [0 => "theme://js/vendor/post-header-animationsb146.js"], "method");
         // line 6
         $this->getAttribute(($context["assets"] ?? null), "addJs", [0 => "theme://js/summerb146.js"], "method");
-        // line 7
-        echo "
-<script type=\"text/javascript\" src=\"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\"></script>
-<script>
-MathJax.Hub.Config({
-    config: [\"MMLorHTML.js\"],
-    extensions: [\"tex2jax.js\",\"TeX/AMSmath.js\",\"TeX/AMSsymbols.js\"],
-    jax: [\"input/TeX\"],
-    tex2jax: {
-        inlineMath: [ ['\$','\$'], [\"\\\\(\",\"\\\\)\"] ],
-        displayMath: [ ['\$\$','\$\$'], [\"\\\\[\",\"\\\\]\"] ],
-        processEscapes: false
-    },
-    TeX: {
-        TagSide: \"right\",
-        TagIndent: \".8em\",
-        MultLineWidth: \"85%\",
-        equationNumbers: {
-           autoNumber: \"AMS\",
-       },
-       unicode: {
-           fonts: \"STIXGeneral,'Arial Unicode MS'\" 
-       }
-   },
-   showProcessingMessages: false
-});
-</script>
-
-
-";
     }
 
     public function getTemplateName()
@@ -82,7 +52,7 @@ MathJax.Hub.Config({
 
     public function getDebugInfo()
     {
-        return array (  42 => 7,  40 => 6,  38 => 5,  36 => 4,  34 => 3,  32 => 2,  30 => 1,);
+        return array (  40 => 6,  38 => 5,  36 => 4,  34 => 3,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -100,35 +70,6 @@ MathJax.Hub.Config({
 {% do assets.addJs('theme://js/vendor/foundation.minb146.js') %}
 {% do assets.addJs('theme://js/vendor/background-checkb146.js') %}
 {% do assets.addJs('theme://js/vendor/post-header-animationsb146.js') %}
-{% do assets.addJs('theme://js/summerb146.js') %}
-
-<script type=\"text/javascript\" src=\"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\"></script>
-<script>
-MathJax.Hub.Config({
-    config: [\"MMLorHTML.js\"],
-    extensions: [\"tex2jax.js\",\"TeX/AMSmath.js\",\"TeX/AMSsymbols.js\"],
-    jax: [\"input/TeX\"],
-    tex2jax: {
-        inlineMath: [ ['\$','\$'], [\"\\\\(\",\"\\\\)\"] ],
-        displayMath: [ ['\$\$','\$\$'], [\"\\\\[\",\"\\\\]\"] ],
-        processEscapes: false
-    },
-    TeX: {
-        TagSide: \"right\",
-        TagIndent: \".8em\",
-        MultLineWidth: \"85%\",
-        equationNumbers: {
-           autoNumber: \"AMS\",
-       },
-       unicode: {
-           fonts: \"STIXGeneral,'Arial Unicode MS'\" 
-       }
-   },
-   showProcessingMessages: false
-});
-</script>
-
-
-", "partials/scripts.html.twig", "/usr/share/nginx/html/user/themes/notepad/templates/partials/scripts.html.twig");
+{% do assets.addJs('theme://js/summerb146.js') %}", "partials/scripts.html.twig", "/usr/share/nginx/html/user/themes/notepad/templates/partials/scripts.html.twig");
     }
 }

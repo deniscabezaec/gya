@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1560379304,
-    'checksum' => 'ba07bea9a615c6b213365cdc4d47b353',
+    'timestamp' => 1560449593,
+    'checksum' => '7e7cf84eba091bca3a58038109a75b7e',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -15,7 +15,7 @@ return [
             ],
             'plugins/ganalytics' => [
                 'file' => 'user/config/plugins/ganalytics.yaml',
-                'modified' => 1560379304
+                'modified' => 1560449501
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
@@ -27,7 +27,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1560372954
+                'modified' => 1560449284
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -79,7 +79,7 @@ return [
             ],
             'plugins/ganalytics' => [
                 'file' => 'user/plugins/ganalytics/ganalytics.yaml',
-                'modified' => 1560379256
+                'modified' => 1560446499
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
@@ -696,6 +696,7 @@ node_modules'
                 'facebook' => 'alexkbzav',
                 'github' => NULL,
                 'instagram' => 'alexkbzav',
+                'linkedin' => 'alexkbzav',
                 'google_plus' => NULL
             ],
             'logo' => '/user/themes/notepad/images/logo.png',

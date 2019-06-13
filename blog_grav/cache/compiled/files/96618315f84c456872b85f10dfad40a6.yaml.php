@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/config/site.yaml',
-    'modified' => 1560372954,
+    'modified' => 1560449284,
     'data' => [
         'title' => 'Graficación y Animación',
         'default_lang' => 'es',
@@ -34,6 +34,7 @@ return [
             'facebook' => 'alexkbzav',
             'github' => NULL,
             'instagram' => 'alexkbzav',
+            'linkedin' => 'alexkbzav',
             'google_plus' => NULL
         ],
         'logo' => '/user/themes/notepad/images/logo.png',

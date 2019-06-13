@@ -79,7 +79,7 @@ class __TwigTemplate_9188c8608e56fbb8a40eff825f83a7cedc053e6175fe43e7fd598347ef0
         <section class=\"summer-post-excerpt\">
            <p>";
         // line 23
-        echo \Grav\Common\Utils::truncate(strip_tags($this->getAttribute(($context["post"] ?? null), "content", [])), 40);
+        echo \Grav\Common\Utils::truncate(strip_tags($this->getAttribute(($context["post"] ?? null), "content", [])), 150);
         echo "</p>
        </section>
        
@@ -182,7 +182,7 @@ class __TwigTemplate_9188c8608e56fbb8a40eff825f83a7cedc053e6175fe43e7fd598347ef0
             {% endif %}
         </header>
         <section class=\"summer-post-excerpt\">
-           <p>{{ post.content | striptags | truncate(40) }}</p>
+           <p>{{ post.content | striptags | truncate(150) }}</p>
        </section>
        
        <div class=\"summer-index-post-tags\">

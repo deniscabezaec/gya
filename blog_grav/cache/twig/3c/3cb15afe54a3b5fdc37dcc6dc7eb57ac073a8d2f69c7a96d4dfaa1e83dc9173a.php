@@ -32,18 +32,45 @@ class __TwigTemplate_f25a57996c4864b32045d498cd7b6200232b74d9b76b1a87bc1e3c83f21
          <section>All content copyright <a href=\"";
         // line 3
         echo ($context["base_url_absolute"] ?? null);
-        echo "\"><spam>";
+        echo "\"><strong>";
         echo $this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "name", []);
-        echo "</spam></a> &copy; All rights reserved.</section>
-         <section>Proudly published with <a class=\"icon-ghost\" href=\"https://jekyllrb.com/\">Grav</a></section>
+        echo "</strong></a> &copy; All rights reserved.</section>
     </div>
     <div class=\"social-icons\">
         
         ";
-        // line 8
+        // line 7
+        if ($this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "facebook", [])) {
+            // line 8
+            echo "        <a href=\"https://facebook.com/";
+            echo $this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "facebook", []);
+            echo "\" target=\"_blank\">
+            <span class=\"fa-stack fa-lg\">
+                <i class=\"fa fa-circle fa-stack-2x fa-inverse\"></i>
+                <i class=\"fa fa-facebook fa-stack-1x\"></i>
+            </span>
+        </a>
+        ";
+        }
+        // line 15
+        echo "        ";
+        if ($this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "linkedin", [])) {
+            // line 16
+            echo "        <a href=\"https://linkedin.com/in/";
+            echo $this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "linkedin", []);
+            echo "\" target=\"_blank\">
+            <span class=\"fa-stack fa-lg\">
+                <i class=\"fa fa-circle fa-stack-2x fa-inverse\"></i>
+                <i class=\"fa fa-linkedin fa-stack-1x\"></i>
+            </span>
+        </a>
+        ";
+        }
+        // line 23
+        echo "        ";
         if ($this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "twitter", [])) {
-            // line 9
-            echo "        <a href=\"http://twitter.com/";
+            // line 24
+            echo "        <a href=\"https://twitter.com/";
             echo $this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "twitter", []);
             echo "\" target=\"_blank\">
             <span class=\"fa-stack fa-lg\">
@@ -53,10 +80,10 @@ class __TwigTemplate_f25a57996c4864b32045d498cd7b6200232b74d9b76b1a87bc1e3c83f21
         </a>
         ";
         }
-        // line 16
+        // line 31
         echo "        ";
         if ($this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "google_plus", [])) {
-            // line 17
+            // line 32
             echo "        <a href=\"";
             echo $this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "google_plus", []);
             echo "\">
@@ -67,11 +94,11 @@ class __TwigTemplate_f25a57996c4864b32045d498cd7b6200232b74d9b76b1a87bc1e3c83f21
         </a>
         ";
         }
-        // line 24
+        // line 39
         echo "        ";
         if ($this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "instagram", [])) {
-            // line 25
-            echo "        <a href=\"http://instagram.com/";
+            // line 40
+            echo "        <a href=\"https://instagram.com/";
             echo $this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "instagram", []);
             echo "\" target=\"_blank\">
             <span class=\"fa-stack fa-lg\">
@@ -81,11 +108,11 @@ class __TwigTemplate_f25a57996c4864b32045d498cd7b6200232b74d9b76b1a87bc1e3c83f21
         </a>
         ";
         }
-        // line 32
+        // line 47
         echo "        ";
         if ($this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "github", [])) {
-            // line 33
-            echo "        <a href=\"http://github.com/";
+            // line 48
+            echo "        <a href=\"https://github.com/";
             echo $this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "github", []);
             echo "\" target=\"_blank\">
             <span class=\"fa-stack fa-lg\">
@@ -95,21 +122,7 @@ class __TwigTemplate_f25a57996c4864b32045d498cd7b6200232b74d9b76b1a87bc1e3c83f21
         </a>
         ";
         }
-        // line 40
-        echo "        ";
-        if ($this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "facebook", [])) {
-            // line 41
-            echo "        <a href=\"http://facebook.com/";
-            echo $this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "facebook", []);
-            echo "\" target=\"_blank\">
-            <span class=\"fa-stack fa-lg\">
-                <i class=\"fa fa-circle fa-stack-2x fa-inverse\"></i>
-                <i class=\"fa fa-facebook fa-stack-1x\"></i>
-            </span>
-        </a>
-        ";
-        }
-        // line 48
+        // line 55
         echo "    </div>
     
     <div class=\"cf\"></div>
@@ -129,7 +142,7 @@ class __TwigTemplate_f25a57996c4864b32045d498cd7b6200232b74d9b76b1a87bc1e3c83f21
 
     public function getDebugInfo()
     {
-        return array (  113 => 48,  102 => 41,  99 => 40,  88 => 33,  85 => 32,  74 => 25,  71 => 24,  60 => 17,  57 => 16,  46 => 9,  44 => 8,  34 => 3,  30 => 1,);
+        return array (  126 => 55,  115 => 48,  112 => 47,  101 => 40,  98 => 39,  87 => 32,  84 => 31,  73 => 24,  70 => 23,  59 => 16,  56 => 15,  45 => 8,  43 => 7,  34 => 3,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -144,13 +157,28 @@ class __TwigTemplate_f25a57996c4864b32045d498cd7b6200232b74d9b76b1a87bc1e3c83f21
     {
         return new Source("<footer class=\"summer-site-footer\">
     <div class=\"copyright\">
-         <section>All content copyright <a href=\"{{ base_url_absolute }}\"><spam>{{ site.owner.name }}</spam></a> &copy; All rights reserved.</section>
-         <section>Proudly published with <a class=\"icon-ghost\" href=\"https://jekyllrb.com/\">Grav</a></section>
+         <section>All content copyright <a href=\"{{ base_url_absolute }}\"><strong>{{ site.owner.name }}</strong></a> &copy; All rights reserved.</section>
     </div>
     <div class=\"social-icons\">
         
+        {% if site.owner.facebook %}
+        <a href=\"https://facebook.com/{{ site.owner.facebook }}\" target=\"_blank\">
+            <span class=\"fa-stack fa-lg\">
+                <i class=\"fa fa-circle fa-stack-2x fa-inverse\"></i>
+                <i class=\"fa fa-facebook fa-stack-1x\"></i>
+            </span>
+        </a>
+        {% endif %}
+        {% if site.owner.linkedin %}
+        <a href=\"https://linkedin.com/in/{{ site.owner.linkedin }}\" target=\"_blank\">
+            <span class=\"fa-stack fa-lg\">
+                <i class=\"fa fa-circle fa-stack-2x fa-inverse\"></i>
+                <i class=\"fa fa-linkedin fa-stack-1x\"></i>
+            </span>
+        </a>
+        {% endif %}
         {% if site.owner.twitter %}
-        <a href=\"http://twitter.com/{{ site.owner.twitter }}\" target=\"_blank\">
+        <a href=\"https://twitter.com/{{ site.owner.twitter }}\" target=\"_blank\">
             <span class=\"fa-stack fa-lg\">
                 <i class=\"fa fa-circle fa-stack-2x fa-inverse\"></i>
                 <i class=\"fa fa-twitter fa-stack-1x\"></i>
@@ -166,7 +194,7 @@ class __TwigTemplate_f25a57996c4864b32045d498cd7b6200232b74d9b76b1a87bc1e3c83f21
         </a>
         {% endif %}
         {% if site.owner.instagram %}
-        <a href=\"http://instagram.com/{{ site.owner.instagram }}\" target=\"_blank\">
+        <a href=\"https://instagram.com/{{ site.owner.instagram }}\" target=\"_blank\">
             <span class=\"fa-stack fa-lg\">
                 <i class=\"fa fa-circle fa-stack-2x fa-inverse\"></i>
                 <i class=\"fa fa-instagram fa-stack-1x\"></i>
@@ -174,18 +202,10 @@ class __TwigTemplate_f25a57996c4864b32045d498cd7b6200232b74d9b76b1a87bc1e3c83f21
         </a>
         {% endif %}
         {% if site.owner.github %}
-        <a href=\"http://github.com/{{ site.owner.github }}\" target=\"_blank\">
+        <a href=\"https://github.com/{{ site.owner.github }}\" target=\"_blank\">
             <span class=\"fa-stack fa-lg\">
                 <i class=\"fa fa-circle fa-stack-2x fa-inverse\"></i>
                 <i class=\"fa fa-github fa-stack-1x\"></i>
-            </span>
-        </a>
-        {% endif %}
-        {% if site.owner.facebook %}
-        <a href=\"http://facebook.com/{{ site.owner.facebook }}\" target=\"_blank\">
-            <span class=\"fa-stack fa-lg\">
-                <i class=\"fa fa-circle fa-stack-2x fa-inverse\"></i>
-                <i class=\"fa fa-facebook fa-stack-1x\"></i>
             </span>
         </a>
         {% endif %}

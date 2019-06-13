@@ -1,7 +1,7 @@
 {% embed 'partials/base.html.twig' %}
 
 {% block body %}
-<body class="post-template" itemscope itemtype="http://schema.org/WebPage">
+<body class="post-template" itemscope itemtype="https://schema.org/WebPage">
 {% endblock %}
 {% block header %}{% endblock %}
 
@@ -17,12 +17,12 @@
     </div>
     <div class="summer-post-title bg-check">
       <h1>{{ page.title }}</h1>
-      <p>by <strong>{{ site.owner.name }}</strong> &#8212; on {% for tag in page.taxonomy.tag %}<a href="{{ base_url_absolute }}/tag:{{ tag }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{%if not loop.last %}&nbsp;&comma;&nbsp;{% endif %}{% endfor %} <strong><time datetime="{{ page.date | date(site.date_long) }}">{{ page.date | date("d M Y") }}</time></strong></p>
+      <p>por <strong>{{ site.owner.name }}</strong> &#8212; sobre {% for tag in page.taxonomy.tag %}<a href="{{ base_url_absolute }}/tag:{{ tag }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{%if not loop.last %}&nbsp;&comma;&nbsp;{% endif %}{% endfor %} <strong><time datetime="{{ page.date | date(site.date_long) }}">{{ page.date | date("d M Y") }}</time></strong></p>
     </div>
     <div class="bg-img"></div>
   </header>
 
-  <button class="trigger bg-check" data-info="Read more"><span>Trigger</span></button>
+  <button class="trigger bg-check" data-info="Leer más"><span>Trigger</span></button>
 
   {% if page.header.image %}<img src="{{ page.media[page.header.image].url }}" alt="cover-image" />{% endif %}
 
