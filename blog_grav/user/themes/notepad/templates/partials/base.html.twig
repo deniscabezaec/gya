@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
 <head>
+
+    <!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TV7C9RP');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="utf-8">
     <!-- (1) Optimize for mobile versions: https://goo.gl/EOpFl -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +25,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <link rel="canonical" href="{{ page.url() }}">
-    <!--<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,latin-ext' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600&amp;subset=latin,latin-ext' rel='stylesheet'>-->
 
     <!-- Icons -->
     <!-- 16x16 -->
@@ -51,6 +58,12 @@
  </head>
 {% block body %}
     <body class="home-template" itemscope itemtype="https://schema.org/WebPage">
+
+    <!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV7C9RP"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     {% endblock %}
     {% set home = pages.find(config.system.home.alias) %}
         {% block header %}

@@ -2,12 +2,12 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/config/system.yaml',
-    'modified' => 1560472255,
+    'modified' => 1560504471,
     'data' => [
         'absolute_urls' => false,
         'timezone' => 'America/Guayaquil',
         'param_sep' => ':',
-        'wrapped_site' => false,
+        'wrapped_site' => true,
         'reverse_proxy_setup' => false,
         'force_ssl' => false,
         'force_lowercase_urls' => true,
@@ -34,9 +34,10 @@ return [
                 'dir' => 'asc'
             ],
             'list' => [
-                'count' => 20
+                'count' => 5
             ],
             'dateformat' => [
+                'default' => 'd-m-Y H:i',
                 'short' => 'jS M Y',
                 'long' => 'F jS \\a\\t g:ia'
             ],
@@ -70,10 +71,11 @@ return [
                 5 => 'rss',
                 6 => 'atom'
             ],
-            'expires' => 604800,
-            'last_modified' => false,
-            'etag' => false,
-            'vary_accept_encoding' => false,
+            'expires' => 864000,
+            'cache_control' => 'no-cache',
+            'last_modified' => true,
+            'etag' => true,
+            'vary_accept_encoding' => true,
             'redirect_default_route' => false,
             'redirect_default_code' => '302',
             'redirect_trailing_slash' => true,
@@ -103,12 +105,12 @@ return [
             'driver' => 'auto',
             'prefix' => 'g',
             'purge_at' => '0 4 * * *',
-            'clear_at' => '0 3 * * *',
+            'clear_at' => '0 * * * *',
             'clear_job_type' => 'standard',
             'clear_images_by_default' => true,
             'cli_compatibility' => false,
-            'lifetime' => 604800,
-            'gzip' => false,
+            'lifetime' => 864000,
+            'gzip' => true,
             'allow_webserver_gzip' => false
         ],
         'twig' => [
@@ -121,14 +123,14 @@ return [
             'umask_fix' => false
         ],
         'assets' => [
-            'css_pipeline' => false,
-            'css_pipeline_include_externals' => true,
+            'css_pipeline' => true,
+            'css_pipeline_include_externals' => false,
             'css_pipeline_before_excludes' => true,
             'css_minify' => true,
             'css_minify_windows' => false,
             'css_rewrite' => true,
-            'js_pipeline' => false,
-            'js_pipeline_include_externals' => true,
+            'js_pipeline' => true,
+            'js_pipeline_include_externals' => false,
             'js_pipeline_before_excludes' => true,
             'js_minify' => true,
             'enable_asset_timestamp' => false,
@@ -169,11 +171,11 @@ return [
         'session' => [
             'enabled' => true,
             'initialize' => true,
-            'timeout' => 1800,
+            'timeout' => 3600,
             'name' => 'grav-site',
             'uniqueness' => 'path',
-            'secure' => false,
-            'httponly' => true,
+            'secure' => true,
+            'httponly' => false,
             'split' => true
         ],
         'gpm' => [

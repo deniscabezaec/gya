@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/config/site.yaml',
-    'modified' => 1560449284,
+    'modified' => 1560504628,
     'data' => [
         'title' => 'Graficación y Animación',
         'default_lang' => 'es',
@@ -14,7 +14,7 @@ return [
             0 => 'tag'
         ],
         'metadata' => [
-            'description' => 'Grav is a flat-file CMS'
+            'description' => 'Sitio Alex Kbza elaborado con flat-file CMS Grav.'
         ],
         'summary' => [
             'enabled' => true,

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/plugins/admin/languages/zh.yaml',
-    'modified' => 1560280348,
+    'modified' => 1560472821,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => '这是一个 Beta 版本！若在生产环境中使用，请自行承担责任。',

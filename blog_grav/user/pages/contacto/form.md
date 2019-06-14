@@ -3,7 +3,7 @@ title: Contacto
 visible: true
 form:
     name: contact
-    action: /home
+    action: /thankyou
     fields:
         -
             name: name
@@ -112,8 +112,6 @@ form:
                 to: '{{ form.value.email|e }}'
                 to_name: '{{ form.value.name|e }}'
                 process_markdown: true
-        -
-            display: /thankyou
         -
             reset: false
 ---

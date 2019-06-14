@@ -1,0 +1,6 @@
+enabled: true
+limit: 10
+description: 'Feed del contenido publicado en el sitio web Alex Kbza'
+lang: es-es
+length: 500
+enable_json_feed: false

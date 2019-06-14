@@ -6,7 +6,7 @@ author:
 taxonomies:
   - tag
 metadata:
-  description: 'Grav is a flat-file CMS'
+  description: 'Sitio Alex Kbza elaborado con flat-file CMS Grav.'
 summary:
   enabled: true
   format: short

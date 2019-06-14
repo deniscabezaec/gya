@@ -3,7 +3,7 @@ title: 'Relog Canvas'
 visible: true
 ---
 
-<div>
+<div class="column">
     
 <canvas id="canvas" width="400" height="400"
 style="background-color:#333">

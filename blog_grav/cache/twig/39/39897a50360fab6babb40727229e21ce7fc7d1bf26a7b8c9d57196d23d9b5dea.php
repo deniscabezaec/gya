@@ -38,7 +38,7 @@ class __TwigTemplate_8c219721aeb5f9ff0f40fa750930e037a959e5636a9db7cf94a4127c102
         <li><a href=\"";
         // line 9
         echo ($context["base_url_absolute"] ?? null);
-        echo "\"><i class=\"fa fa-home\"></i>Inicio</a></li>
+        echo "\"><i class=\"fa fa-home\"></i> Inicio</a></li>
         ";
         // line 10
         $context['_parent'] = $context;
@@ -117,7 +117,7 @@ class __TwigTemplate_8c219721aeb5f9ff0f40fa750930e037a959e5636a9db7cf94a4127c102
         <li class=\"summer-mobile-close-btn show-for-small text-right\">
             <a href=\"#\"><i class=\"fa fa-times\"></i></a>
         </li>
-        <li><a href=\"{{ base_url_absolute }}\"><i class=\"fa fa-home\"></i>Inicio</a></li>
+        <li><a href=\"{{ base_url_absolute }}\"><i class=\"fa fa-home\"></i> Inicio</a></li>
         {% for link in site.links %}
             {% if link.url | contains('https') %}
                 {% set domain = '' %}
