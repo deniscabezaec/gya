@@ -46,7 +46,7 @@ class __TwigTemplate_8c219721aeb5f9ff0f40fa750930e037a959e5636a9db7cf94a4127c102
         foreach ($context['_seq'] as $context["_key"] => $context["link"]) {
             // line 11
             echo "            ";
-            if ($this->env->getExtension('Grav\Common\Twig\TwigExtension')->containsFilter($this->getAttribute($context["link"], "url", []), "http")) {
+            if ($this->env->getExtension('Grav\Common\Twig\TwigExtension')->containsFilter($this->getAttribute($context["link"], "url", []), "https")) {
                 // line 12
                 echo "                ";
                 $context["domain"] = "";
@@ -64,7 +64,7 @@ class __TwigTemplate_8c219721aeb5f9ff0f40fa750930e037a959e5636a9db7cf94a4127c102
             echo ($context["domain"] ?? null);
             echo $this->getAttribute($context["link"], "url", []);
             echo "\" ";
-            if ($this->env->getExtension('Grav\Common\Twig\TwigExtension')->containsFilter($this->getAttribute($context["link"], "url", []), "http")) {
+            if ($this->env->getExtension('Grav\Common\Twig\TwigExtension')->containsFilter($this->getAttribute($context["link"], "url", []), "https")) {
                 echo "target=\"_blank\"";
             }
             echo ">";
@@ -119,12 +119,12 @@ class __TwigTemplate_8c219721aeb5f9ff0f40fa750930e037a959e5636a9db7cf94a4127c102
         </li>
         <li><a href=\"{{ base_url_absolute }}\"><i class=\"fa fa-home\"></i>Inicio</a></li>
         {% for link in site.links %}
-            {% if link.url | contains('http') %}
+            {% if link.url | contains('https') %}
                 {% set domain = '' %}
                     {% else %}
                     {% set domain = base_url_absolute %}
                     {% endif %}
-                    <li><a href=\"{{ domain }}{{ link.url }}\" {% if link.url | contains('http') %}target=\"_blank\"{% endif %}>{{ link.title }}</a></li>
+                    <li><a href=\"{{ domain }}{{ link.url }}\" {% if link.url | contains('https') %}target=\"_blank\"{% endif %}>{{ link.title }}</a></li>
         {% endfor %}
         <li><a href=\"{{ base_url }}/blog.rss\" title=\"Atom/RSS feed\"><i class=\"fa fa-rss\"></i> Feed</a></li>
     </ul>

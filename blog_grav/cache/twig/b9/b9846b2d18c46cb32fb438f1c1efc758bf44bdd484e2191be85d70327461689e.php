@@ -69,8 +69,8 @@ class __TwigTemplate_571e6072dc20e7296719ed8e1643209646b45e3cf1c31fa699ca823512c
         // line 18
         echo $this->getAttribute(($context["page"] ?? null), "url", [], "method");
         echo "\">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,latin-ext' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600&amp;subset=latin,latin-ext' rel='stylesheet'>
+    <!--<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,latin-ext' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600&amp;subset=latin,latin-ext' rel='stylesheet'>-->
 
     <!-- Icons -->
     <!-- 16x16 -->
@@ -165,11 +165,10 @@ class __TwigTemplate_571e6072dc20e7296719ed8e1643209646b45e3cf1c31fa699ca823512c
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addCss", [0 => "theme://css/vendor/normalizeb146.css"], "method");
         // line 39
-        echo "        <!--";
+        echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addCss", [0 => "theme://css/vendor/foundation.minb146.css"], "method");
-        echo "-->
-        ";
         // line 40
+        echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addCss", [0 => "theme://css/styleb146.css"], "method");
         // line 41
         echo "        ";
@@ -296,7 +295,7 @@ class __TwigTemplate_571e6072dc20e7296719ed8e1643209646b45e3cf1c31fa699ca823512c
 
     public function getDebugInfo()
     {
-        return array (  282 => 87,  277 => 86,  274 => 85,  270 => 81,  267 => 80,  264 => 79,  257 => 76,  254 => 75,  246 => 70,  240 => 67,  232 => 61,  230 => 60,  223 => 59,  219 => 57,  216 => 56,  211 => 53,  208 => 52,  200 => 49,  197 => 48,  188 => 46,  185 => 45,  182 => 44,  178 => 42,  175 => 41,  173 => 40,  168 => 39,  165 => 38,  162 => 37,  159 => 36,  152 => 89,  150 => 85,  147 => 84,  145 => 83,  142 => 82,  140 => 79,  137 => 78,  135 => 75,  132 => 74,  129 => 56,  126 => 55,  124 => 52,  121 => 51,  119 => 48,  116 => 47,  114 => 44,  111 => 43,  109 => 36,  104 => 34,  99 => 32,  94 => 30,  89 => 28,  84 => 26,  79 => 24,  70 => 18,  62 => 12,  60 => 11,  52 => 10,  41 => 2,  38 => 1,);
+        return array (  281 => 87,  276 => 86,  273 => 85,  269 => 81,  266 => 80,  263 => 79,  256 => 76,  253 => 75,  245 => 70,  239 => 67,  231 => 61,  229 => 60,  222 => 59,  218 => 57,  215 => 56,  210 => 53,  207 => 52,  199 => 49,  196 => 48,  187 => 46,  184 => 45,  181 => 44,  177 => 42,  174 => 41,  171 => 40,  168 => 39,  165 => 38,  162 => 37,  159 => 36,  152 => 89,  150 => 85,  147 => 84,  145 => 83,  142 => 82,  140 => 79,  137 => 78,  135 => 75,  132 => 74,  129 => 56,  126 => 55,  124 => 52,  121 => 51,  119 => 48,  116 => 47,  114 => 44,  111 => 43,  109 => 36,  104 => 34,  99 => 32,  94 => 30,  89 => 28,  84 => 26,  79 => 24,  70 => 18,  62 => 12,  60 => 11,  52 => 10,  41 => 2,  38 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -327,8 +326,8 @@ class __TwigTemplate_571e6072dc20e7296719ed8e1643209646b45e3cf1c31fa699ca823512c
     <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black-translucent\">
 
     <link rel=\"canonical\" href=\"{{ page.url() }}\">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,latin-ext' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600&amp;subset=latin,latin-ext' rel='stylesheet'>
+    <!--<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,latin-ext' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600&amp;subset=latin,latin-ext' rel='stylesheet'>-->
 
     <!-- Icons -->
     <!-- 16x16 -->
@@ -347,7 +346,7 @@ class __TwigTemplate_571e6072dc20e7296719ed8e1643209646b45e3cf1c31fa699ca823512c
     {% block stylesheets %}
         {% do assets.addCss('theme://css/font-awesome.min.css') %}
         {% do assets.addCss('theme://css/vendor/normalizeb146.css') %}
-        <!--{% do assets.addCss('theme://css/vendor/foundation.minb146.css') %}-->
+        {% do assets.addCss('theme://css/vendor/foundation.minb146.css') %}
         {% do assets.addCss('theme://css/styleb146.css') %}
         {% do assets.addCss('theme://css/postb146.css') %}
     {% endblock %}

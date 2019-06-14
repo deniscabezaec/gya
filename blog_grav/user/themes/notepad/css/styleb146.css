@@ -162,7 +162,7 @@ main, .notepad-share-icons, .notepad-disqus {
   width: 100%;
   text-align: center;
   background-color: rgba(95,95,95,0.5);
-  background-image: url("https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background-image: url("../images/fondo.jpeg");
   filter:brightness(0.9);
   
   background-size: cover; }
