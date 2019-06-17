@@ -4,11 +4,16 @@ title: 'ACERCA DE EL AUTOR'
 
 ![Authorl](author.jpg)
 
+Hola, me llamo Denis Cabeza.
 
-The Notepad theme for Grav is a direct port of the [Notepad Theme for Jekyll](http://hmfaysal.github.io/Notepad/) designed by [Hossain Mohd Faysal](http://hmfaysal.github.io/).
+Soy estudiante de ingeniería en sistemas y computación en la Pontificia Universidad Católica del Ecuador Sede Esmeraldas (PUCESE), soy emprendedor y quiero ser Coach Empresarial.
 
-You can **download** the theme here: [github.com/getgrav/grav-theme-notepad](https://github.com/getgrav/grav-theme-notepad) but it's strongly advised to download the complete [Download Notepad Skeleton](http://getgrav.org/downloads/skeletons#extras).
+Visita mi sitio oficial [aquí](http://hmfaysal.github.io/Notepad/).
 
-You can find out more info about customizing your Grav theme, as well as basic Grav usage documentation at [learn.getgrav.org](http://learn.getgrav.org)
+Sigueme en redes sociales.
 
-You can find the source code for Grav at [github.com/getgrav/grav](https://github.com/getgrav/grav)
+**Facebook:**  [DenisCabezaV](https://www.facebook.com/DenisCabezaV)
+**Twitter:**   [DenisCabezaV](https://www.twitter.com/DenisCabezaV)
+**Instagram:** [DenisCabezaV](https://www.instagram.com/DenisCabezaV)
+
+Puedes encontrar parte de mi trabajo en [github](https://www.github.com/DenisCabezaV).
