@@ -27,7 +27,7 @@ class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed281
     protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
-        $this->loadTemplate("post.html.twig", "post.html.twig", 1, "852986059")->display($context);
+        $this->loadTemplate("post.html.twig", "post.html.twig", 1, "709466655")->display($context);
     }
 
     public function getTemplateName()
@@ -54,6 +54,10 @@ class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed281
 
 {% block body %}
 <body class=\"post-template\" itemscope itemtype=\"https://schema.org/WebPage\">
+    <!-- Google Tag Manager (noscript) -->
+\t    <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-TV7C9RP\"
+\t    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 {% endblock %}
 {% block header %}{% endblock %}
 
@@ -71,7 +75,7 @@ class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed281
       <h1>{{ page.title }}</h1>
       <p>por <strong>{{ site.owner.name }}</strong> &#8212; sobre {% for tag in page.taxonomy.tag %}<a href=\"{{ base_url_absolute }}/tag:{{ tag }}\" data-toggle=\"tooltip\" title=\"Posts tagged with {{ tag }}\" rel=\"tag\">{{ tag }}</a>{%if not loop.last %}&nbsp;&comma;&nbsp;{% endif %}{% endfor %} <strong><time datetime=\"{{ page.date | date(site.date_long) }}\">{{ page.date | date(\"d M Y\") }}</time></strong></p>
     </div>
-    <div class=\"bg-img\"></div>
+    
   </header>
 
   <button class=\"trigger bg-check\" data-info=\"Leer más\"><span>Trigger</span></button>
@@ -99,7 +103,7 @@ class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed281
 
 
 /* post.html.twig */
-class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed2813c612___852986059 extends \Twig\Template
+class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed2813c612___709466655 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -129,44 +133,48 @@ class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed281
     {
         // line 4
         echo "<body class=\"post-template\" itemscope itemtype=\"https://schema.org/WebPage\">
+    <!-- Google Tag Manager (noscript) -->
+\t    <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-TV7C9RP\"
+\t    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 ";
     }
 
-    // line 6
+    // line 10
     public function block_header($context, array $blocks = [])
     {
     }
 
-    // line 8
+    // line 12
     public function block_content($context, array $blocks = [])
     {
-        // line 9
+        // line 13
         echo " <main id=\"summer-post-container\" class=\"summer-post-container intro-effect-sliced\" role=\"main\">
   <header class=\"summer-post-header\">
     <div class=\"bg-img\"></div>
     <div class=\"summer-post-menu-header\">
       <a class=\"summer-blog-logo\" href=\"";
-        // line 13
+        // line 17
         echo ($context["base_url_absolute"] ?? null);
         echo "\">
         <img src=\"";
-        // line 14
+        // line 18
         echo ($context["base_url"] ?? null);
         echo $this->getAttribute(($context["site"] ?? null), "logo", []);
         echo "\" alt=\"Blog Logo\" />
       </a>
       ";
-        // line 16
-        $this->loadTemplate("partials/navigation.html.twig", "post.html.twig", 16)->display($context);
-        // line 17
+        // line 20
+        $this->loadTemplate("partials/navigation.html.twig", "post.html.twig", 20)->display($context);
+        // line 21
         echo "    </div>
     <div class=\"summer-post-title bg-check\">
       <h1>";
-        // line 19
+        // line 23
         echo $this->getAttribute(($context["page"] ?? null), "title", []);
         echo "</h1>
       <p>por <strong>";
-        // line 20
+        // line 24
         echo $this->getAttribute($this->getAttribute(($context["site"] ?? null), "owner", []), "name", []);
         echo "</strong> &#8212; sobre ";
         $context['_parent'] = $context;
@@ -215,24 +223,24 @@ class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed281
         echo twig_date_format_filter($this->env, $this->getAttribute(($context["page"] ?? null), "date", []), "d M Y");
         echo "</time></strong></p>
     </div>
-    <div class=\"bg-img\"></div>
+    
   </header>
 
   <button class=\"trigger bg-check\" data-info=\"Leer más\"><span>Trigger</span></button>
 
   ";
-        // line 27
+        // line 31
         if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "image", [])) {
             echo "<img src=\"";
             echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "image", []), [], "array"), "url", []);
             echo "\" alt=\"cover-image\" />";
         }
-        // line 28
+        // line 32
         echo "
     <article class=\"summer-post-content post\">
       <div>
         ";
-        // line 31
+        // line 35
         echo ($context["content"] ?? null);
         echo "
       </div>
@@ -241,15 +249,15 @@ class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed281
     <br />
 
     ";
-        // line 37
-        $this->loadTemplate("partials/footer.html.twig", "post.html.twig", 37)->display($context);
-        // line 38
+        // line 41
+        $this->loadTemplate("partials/footer.html.twig", "post.html.twig", 41)->display($context);
+        // line 42
         echo "    <div class=\"cf\"></div>
   </main>
 ";
     }
 
-    // line 42
+    // line 46
     public function block_footer($context, array $blocks = [])
     {
     }
@@ -266,7 +274,7 @@ class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed281
 
     public function getDebugInfo()
     {
-        return array (  253 => 42,  247 => 38,  245 => 37,  236 => 31,  231 => 28,  225 => 27,  170 => 20,  166 => 19,  162 => 17,  160 => 16,  154 => 14,  150 => 13,  144 => 9,  141 => 8,  136 => 6,  131 => 4,  128 => 3,  30 => 1,);
+        return array (  261 => 46,  255 => 42,  253 => 41,  244 => 35,  239 => 32,  233 => 31,  178 => 24,  174 => 23,  170 => 21,  168 => 20,  162 => 18,  158 => 17,  152 => 13,  149 => 12,  144 => 10,  135 => 4,  132 => 3,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -283,6 +291,10 @@ class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed281
 
 {% block body %}
 <body class=\"post-template\" itemscope itemtype=\"https://schema.org/WebPage\">
+    <!-- Google Tag Manager (noscript) -->
+\t    <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-TV7C9RP\"
+\t    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 {% endblock %}
 {% block header %}{% endblock %}
 
@@ -300,7 +312,7 @@ class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed281
       <h1>{{ page.title }}</h1>
       <p>por <strong>{{ site.owner.name }}</strong> &#8212; sobre {% for tag in page.taxonomy.tag %}<a href=\"{{ base_url_absolute }}/tag:{{ tag }}\" data-toggle=\"tooltip\" title=\"Posts tagged with {{ tag }}\" rel=\"tag\">{{ tag }}</a>{%if not loop.last %}&nbsp;&comma;&nbsp;{% endif %}{% endfor %} <strong><time datetime=\"{{ page.date | date(site.date_long) }}\">{{ page.date | date(\"d M Y\") }}</time></strong></p>
     </div>
-    <div class=\"bg-img\"></div>
+    
   </header>
 
   <button class=\"trigger bg-check\" data-info=\"Leer más\"><span>Trigger</span></button>

@@ -27,7 +27,7 @@ class __TwigTemplate_f4b9cd263518c3d4a7e708eda99a33960d892da8516dd7441791fb33078
     protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
-        $this->loadTemplate("page.html.twig", "page.html.twig", 1, "426453705")->display($context);
+        $this->loadTemplate("page.html.twig", "page.html.twig", 1, "1573457178")->display($context);
     }
 
     public function getTemplateName()
@@ -53,6 +53,10 @@ class __TwigTemplate_f4b9cd263518c3d4a7e708eda99a33960d892da8516dd7441791fb33078
         return new Source("{% embed 'partials/base.html.twig' %}
 {% block body %}
 <body class=\"post-template page\" itemscope itemtype=\"https://schema.org/WebPage\">
+    <!-- Google Tag Manager (noscript) -->
+\t    <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-TV7C9RP\"
+\t    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 {% endblock %}
 {% block header %}{% endblock %}
             
@@ -87,7 +91,7 @@ class __TwigTemplate_f4b9cd263518c3d4a7e708eda99a33960d892da8516dd7441791fb33078
 
 
 /* page.html.twig */
-class __TwigTemplate_f4b9cd263518c3d4a7e708eda99a33960d892da8516dd7441791fb330782eca5___426453705 extends \Twig\Template
+class __TwigTemplate_f4b9cd263518c3d4a7e708eda99a33960d892da8516dd7441791fb330782eca5___1573457178 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -117,41 +121,45 @@ class __TwigTemplate_f4b9cd263518c3d4a7e708eda99a33960d892da8516dd7441791fb33078
     {
         // line 3
         echo "<body class=\"post-template page\" itemscope itemtype=\"https://schema.org/WebPage\">
+    <!-- Google Tag Manager (noscript) -->
+\t    <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-TV7C9RP\"
+\t    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 ";
     }
 
-    // line 5
+    // line 9
     public function block_header($context, array $blocks = [])
     {
     }
 
-    // line 7
+    // line 11
     public function block_content($context, array $blocks = [])
     {
-        // line 8
+        // line 12
         echo "    <main id=\"summer-page-container\" class=\"summer-page-container\" role=\"main\">
         <header class=\"summer-page-header\">
             <div class=\"summer-page-menu-header\">
                 <a class=\"summer-blog-logo\" href=\"";
-        // line 11
+        // line 15
         echo ($context["basebase_url_absolute_url"] ?? null);
         echo "\">
                     <img src=\"";
-        // line 12
+        // line 16
         echo ($context["base_url"] ?? null);
         echo $this->getAttribute(($context["site"] ?? null), "logo", []);
         echo "\" alt=\"Blog Logo\" /></a>
                 </a>
 
                 ";
-        // line 15
-        $this->loadTemplate("partials/navigation.html.twig", "page.html.twig", 15)->display($context);
-        // line 16
+        // line 19
+        $this->loadTemplate("partials/navigation.html.twig", "page.html.twig", 19)->display($context);
+        // line 20
         echo "            </div>
             <div class=\"summer-page-title row\">
                 <div class=\"small-12 columns\">
                     <h1>";
-        // line 19
+        // line 23
         echo $this->getAttribute(($context["page"] ?? null), "title", []);
         echo "</h1>
                 </div>
@@ -159,20 +167,20 @@ class __TwigTemplate_f4b9cd263518c3d4a7e708eda99a33960d892da8516dd7441791fb33078
         </header>
         <article class=\"summer-page-content\">
             <div>";
-        // line 24
+        // line 28
         echo ($context["content"] ?? null);
         echo "</div>
         </article>
         <div class=\"cf\"></div>
         ";
-        // line 27
-        $this->loadTemplate("partials/footer.html.twig", "page.html.twig", 27)->display($context);
-        // line 28
+        // line 31
+        $this->loadTemplate("partials/footer.html.twig", "page.html.twig", 31)->display($context);
+        // line 32
         echo "    </main>
 ";
     }
 
-    // line 31
+    // line 35
     public function block_footer($context, array $blocks = [])
     {
     }
@@ -189,7 +197,7 @@ class __TwigTemplate_f4b9cd263518c3d4a7e708eda99a33960d892da8516dd7441791fb33078
 
     public function getDebugInfo()
     {
-        return array (  176 => 31,  171 => 28,  169 => 27,  163 => 24,  155 => 19,  150 => 16,  148 => 15,  141 => 12,  137 => 11,  132 => 8,  129 => 7,  124 => 5,  119 => 3,  116 => 2,  30 => 1,);
+        return array (  184 => 35,  179 => 32,  177 => 31,  171 => 28,  163 => 23,  158 => 20,  156 => 19,  149 => 16,  145 => 15,  140 => 12,  137 => 11,  132 => 9,  123 => 3,  120 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -205,6 +213,10 @@ class __TwigTemplate_f4b9cd263518c3d4a7e708eda99a33960d892da8516dd7441791fb33078
         return new Source("{% embed 'partials/base.html.twig' %}
 {% block body %}
 <body class=\"post-template page\" itemscope itemtype=\"https://schema.org/WebPage\">
+    <!-- Google Tag Manager (noscript) -->
+\t    <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-TV7C9RP\"
+\t    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 {% endblock %}
 {% block header %}{% endblock %}
             

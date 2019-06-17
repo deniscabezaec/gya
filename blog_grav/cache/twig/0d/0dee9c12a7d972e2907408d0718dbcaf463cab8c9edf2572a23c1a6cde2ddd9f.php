@@ -49,7 +49,7 @@ class __TwigTemplate_9188c8608e56fbb8a40eff825f83a7cedc053e6175fe43e7fd598347ef0
             </time>
         </span>
     </div>
-    <div class=\"small-12 medium-9 large-10 columns\">
+    <div class=\"small-12 medium-6 large-6 columns\">
         <header class=\"summer-post-header\">
             ";
         // line 16
@@ -79,7 +79,7 @@ class __TwigTemplate_9188c8608e56fbb8a40eff825f83a7cedc053e6175fe43e7fd598347ef0
         <section class=\"summer-post-excerpt\">
            <p>";
         // line 23
-        echo \Grav\Common\Utils::truncate(strip_tags($this->getAttribute(($context["post"] ?? null), "content", [])), 150);
+        echo \Grav\Common\Utils::truncate(strip_tags($this->getAttribute(($context["post"] ?? null), "content", [])), 100);
         echo "</p>
        </section>
        
@@ -131,6 +131,13 @@ class __TwigTemplate_9188c8608e56fbb8a40eff825f83a7cedc053e6175fe43e7fd598347ef0
         echo "        </div>
         
     </div>
+    <div class=\"small-12 medium-3 large-4 columns\">
+        <img src=\"";
+        // line 32
+        echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "image", []), [], "array"), "url", []);
+        echo "\" alt=\"cover-image\" />
+        
+    </div>
 </article>
 ";
     }
@@ -147,7 +154,7 @@ class __TwigTemplate_9188c8608e56fbb8a40eff825f83a7cedc053e6175fe43e7fd598347ef0
 
     public function getDebugInfo()
     {
-        return array (  131 => 28,  89 => 27,  82 => 23,  78 => 21,  70 => 19,  58 => 17,  56 => 16,  46 => 9,  40 => 6,  35 => 4,  30 => 1,);
+        return array (  137 => 32,  131 => 28,  89 => 27,  82 => 23,  78 => 21,  70 => 19,  58 => 17,  56 => 16,  46 => 9,  40 => 6,  35 => 4,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -173,7 +180,7 @@ class __TwigTemplate_9188c8608e56fbb8a40eff825f83a7cedc053e6175fe43e7fd598347ef0
             </time>
         </span>
     </div>
-    <div class=\"small-12 medium-9 large-10 columns\">
+    <div class=\"small-12 medium-6 large-6 columns\">
         <header class=\"summer-post-header\">
             {% if post.header.link %}
                <h3 class=\"summer-post-title\"><a href=\"{{ post.url }}\" rel=\"bookmark\" title=\"{{ post.title }}\" itemprop=\"url\"><i class=\"fa fa-angle-double-right\"></i></a> <a href=\"{{ post.header.link }}\">{{ post.title }}</a></h3>
@@ -182,12 +189,16 @@ class __TwigTemplate_9188c8608e56fbb8a40eff825f83a7cedc053e6175fe43e7fd598347ef0
             {% endif %}
         </header>
         <section class=\"summer-post-excerpt\">
-           <p>{{ post.content | striptags | truncate(150) }}</p>
+           <p>{{ post.content | striptags | truncate(100) }}</p>
        </section>
        
        <div class=\"summer-index-post-tags\">
         {% for tag in post.taxonomy.tag %}<span class=\"post-tag-{{tag}}\"><a href=\"{{ base_url_absolute }}/tag{{ config.system.param_sep }}{{ tag }}\">{{ tag }}</a></span>{%if not loop.last %} {% endif %}{% endfor %}
         </div>
+        
+    </div>
+    <div class=\"small-12 medium-3 large-4 columns\">
+        <img src=\"{{ page.media[page.header.image].url }}\" alt=\"cover-image\" />
         
     </div>
 </article>

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/plugins/pagination/languages.yaml',
-    'modified' => 1560472821,
+    'modified' => 1557420797,
     'data' => [
         'en' => [
             'PLUGIN_PAGINATION' => [

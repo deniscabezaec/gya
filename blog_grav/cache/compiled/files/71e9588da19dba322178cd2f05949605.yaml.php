@@ -1,0 +1,26 @@
+<?php
+return [
+    '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
+    'filename' => '/usr/share/nginx/html/user/accounts/admin.yaml',
+    'modified' => 1560647493,
+    'data' => [
+        'state' => 'enabled',
+        'email' => 'deniskabeza@gmail.com',
+        'fullname' => 'Admin',
+        'level' => 'Newbie',
+        'access' => [
+            'admin' => [
+                'super' => 'true',
+                'login' => 'true'
+            ],
+            'site' => [
+                'login' => 'true'
+            ]
+        ],
+        'hashed_password' => '$2y$10$aGj/j2I3srtMnHGDL/k0ceKNdCTVJL/Jxtx.2Qv2eUvlMynzbi60i',
+        'title' => 'Administrador',
+        'language' => 'es',
+        'twofa_enabled' => false,
+        'twofa_secret' => 'QK3FHRLKJMJQZIR3HQSKQIRMJZ2TAXVG'
+    ]
+];

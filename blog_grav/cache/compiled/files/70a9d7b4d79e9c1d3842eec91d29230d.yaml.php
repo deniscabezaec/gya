@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/config/plugins/ganalytics.yaml',
-    'modified' => 1560472820,
+    'modified' => 1560449501,
     'data' => [
         'enabled' => true,
         'trackingId' => 'UA-102977672-2',
