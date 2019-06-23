@@ -1,9 +1,13 @@
 ---
-title: "Sample Quotation Post"
+title: 'Sample Quotation Post'
+published: false
 taxonomy:
-    tag: [sample post, quotation]
+    tag:
+        - 'sample post'
+        - quotation
 image: albert-einstein-2068-hd-wallpapers.jpg
 ---
+
 >&quot;Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius - and a lot of courage - to move in the opposite direction.&quot;
 ><small><cite title="Albert Einstein">Albert Einstein</cite></small>
 

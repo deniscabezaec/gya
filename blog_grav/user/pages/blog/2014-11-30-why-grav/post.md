@@ -1,10 +1,15 @@
 ---
-title: "Why Grav ?"
-date:   12/30/2014
+title: 'Why Grav ?'
+published: false
+date: '30-12-2014 00:00'
 taxonomy:
-    tag: [theme, grav, featured]
+    tag:
+        - featured
+        - theme
+        - grav
 image: swim.jpg
 ---
+
 #Notepad Formats and CSS features
 
 Examples for different formats and css features

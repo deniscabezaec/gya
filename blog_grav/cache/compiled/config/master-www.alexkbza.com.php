@@ -1,129 +1,125 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1560504773,
-    'checksum' => '1e85fd4cf91b5094f02cf94736834faa',
+    'timestamp' => 1561256975,
+    'checksum' => '037ab3ae231fdffcd3eaa7dd1ab4db4c',
     'files' => [
         'user/config' => [
             'backups' => [
                 'file' => 'user/config/backups.yaml',
-                'modified' => 1560472820
+                'modified' => 1560785226
             ],
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1560472820
+                'modified' => 1560785226
             ],
             'plugins/admin' => [
                 'file' => 'user/config/plugins/admin.yaml',
-                'modified' => 1560497999
+                'modified' => 1560785226
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1560499202
+                'modified' => 1560785226
             ],
             'plugins/feed' => [
                 'file' => 'user/config/plugins/feed.yaml',
-                'modified' => 1560499017
+                'modified' => 1560785226
             ],
             'plugins/form' => [
                 'file' => 'user/config/plugins/form.yaml',
-                'modified' => 1560498947
-            ],
-            'plugins/ganalytics' => [
-                'file' => 'user/config/plugins/ganalytics.yaml',
-                'modified' => 1560472820
+                'modified' => 1560785226
             ],
             'plugins/login' => [
                 'file' => 'user/config/plugins/login.yaml',
-                'modified' => 1560498735
+                'modified' => 1560785226
             ],
             'plugins/pagination' => [
                 'file' => 'user/config/plugins/pagination.yaml',
-                'modified' => 1560498074
+                'modified' => 1560785226
             ],
             'plugins/problems' => [
                 'file' => 'user/config/plugins/problems.yaml',
-                'modified' => 1560498052
+                'modified' => 1560785226
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
-                'modified' => 1560472820
+                'modified' => 1560785226
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1560504773
+                'modified' => 1560785226
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1560504628
+                'modified' => 1560785226
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1560472820
+                'modified' => 1560785226
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1560504471
+                'modified' => 1561256966
             ]
         ],
         'system/config' => [
             'backups' => [
                 'file' => 'system/config/backups.yaml',
-                'modified' => 1560472820
+                'modified' => 1560785226
             ],
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1560472820
+                'modified' => 1560785226
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1560472820
+                'modified' => 1560785226
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1560472820
+                'modified' => 1560785226
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1560472820
+                'modified' => 1560785226
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1560472820
+                'modified' => 1560785226
             ]
         ],
         'user/plugins' => [
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1560472821
+                'modified' => 1560785226
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1560472821
+                'modified' => 1560785226
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1560472821
+                'modified' => 1560785226
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1560472821
+                'modified' => 1560785226
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1560472821
+                'modified' => 1560785226
             ],
             'plugins/feed' => [
                 'file' => 'user/plugins/feed/feed.yaml',
-                'modified' => 1560472821
+                'modified' => 1560785226
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1560472821
+                'modified' => 1560785226
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/pagination.yaml',
-                'modified' => 1560472821
+                'modified' => 1560785226
             ]
         ]
     ],
@@ -194,7 +190,7 @@ return [
                 'route' => '/my',
                 'cache_enabled' => false,
                 'theme' => 'grav',
-                'logo_text' => 'Alex Kbza',
+                'logo_text' => NULL,
                 'body_classes' => '',
                 'content_padding' => true,
                 'twofa_enabled' => true,
@@ -336,20 +332,6 @@ return [
                 'enabled' => true,
                 'built_in_css' => false,
                 'delta' => 0
-            ],
-            'ganalytics' => [
-                'enabled' => true,
-                'trackingId' => 'UA-102977672-2',
-                'position' => 'head',
-                'objectName' => 'ga',
-                'forceSsl' => true,
-                'async' => true,
-                'anonymizeIp' => false,
-                'cookieConfig' => false,
-                'cookieName' => '_ga',
-                'cookieExpires' => 63072000,
-                'debugStatus' => false,
-                'debugTrace' => false
             ]
         ],
         'backups' => [

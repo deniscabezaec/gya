@@ -1,11 +1,12 @@
 ---
-layout: post
 title: 'Theme Elements'
-description: 'Theme Elements will save you tons of time working on the site content. Now you''ll be able to create complex layouts within minutes.'
+published: false
 taxonomy:
     tag:
         - Grav
         - Author
+layout: post
+description: 'Theme Elements will save you tons of time working on the site content. Now you''ll be able to create complex layouts within minutes.'
 image: photo19.jpg
 ---
 

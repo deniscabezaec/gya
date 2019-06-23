@@ -1,9 +1,13 @@
 ---
-title: First Commit
-slug: first-commit
-date:   11/30/2014
+title: 'First Commit'
+published: false
+date: '30-11-2014 00:00'
 taxonomy:
-    tag: [theme, grav, installation]
+    tag:
+        - theme
+        - grav
+        - installation
+slug: first-commit
 image: cover9.jpg
 markdown_extra: true
 ---

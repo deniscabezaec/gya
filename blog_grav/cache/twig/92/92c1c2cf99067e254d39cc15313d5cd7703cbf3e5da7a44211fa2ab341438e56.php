@@ -27,7 +27,7 @@ class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed281
     protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
-        $this->loadTemplate("post.html.twig", "post.html.twig", 1, "709466655")->display($context);
+        $this->loadTemplate("post.html.twig", "post.html.twig", 1, "505867898")->display($context);
     }
 
     public function getTemplateName()
@@ -75,7 +75,7 @@ class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed281
       <h1>{{ page.title }}</h1>
       <p>por <strong>{{ site.owner.name }}</strong> &#8212; sobre {% for tag in page.taxonomy.tag %}<a href=\"{{ base_url_absolute }}/tag:{{ tag }}\" data-toggle=\"tooltip\" title=\"Posts tagged with {{ tag }}\" rel=\"tag\">{{ tag }}</a>{%if not loop.last %}&nbsp;&comma;&nbsp;{% endif %}{% endfor %} <strong><time datetime=\"{{ page.date | date(site.date_long) }}\">{{ page.date | date(\"d M Y\") }}</time></strong></p>
     </div>
-    
+    <div class=\"bg-img\"></div>
   </header>
 
   <button class=\"trigger bg-check\" data-info=\"Leer más\"><span>Trigger</span></button>
@@ -103,7 +103,7 @@ class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed281
 
 
 /* post.html.twig */
-class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed2813c612___709466655 extends \Twig\Template
+class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed2813c612___505867898 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -223,7 +223,7 @@ class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed281
         echo twig_date_format_filter($this->env, $this->getAttribute(($context["page"] ?? null), "date", []), "d M Y");
         echo "</time></strong></p>
     </div>
-    
+    <div class=\"bg-img\"></div>
   </header>
 
   <button class=\"trigger bg-check\" data-info=\"Leer más\"><span>Trigger</span></button>
@@ -312,7 +312,7 @@ class __TwigTemplate_59f986fb9bbed1f9926f7fa2eae78e1e4fd73de0fe5a709d47a5beed281
       <h1>{{ page.title }}</h1>
       <p>por <strong>{{ site.owner.name }}</strong> &#8212; sobre {% for tag in page.taxonomy.tag %}<a href=\"{{ base_url_absolute }}/tag:{{ tag }}\" data-toggle=\"tooltip\" title=\"Posts tagged with {{ tag }}\" rel=\"tag\">{{ tag }}</a>{%if not loop.last %}&nbsp;&comma;&nbsp;{% endif %}{% endfor %} <strong><time datetime=\"{{ page.date | date(site.date_long) }}\">{{ page.date | date(\"d M Y\") }}</time></strong></p>
     </div>
-    
+    <div class=\"bg-img\"></div>
   </header>
 
   <button class=\"trigger bg-check\" data-info=\"Leer más\"><span>Trigger</span></button>

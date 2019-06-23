@@ -49,7 +49,7 @@ class __TwigTemplate_9188c8608e56fbb8a40eff825f83a7cedc053e6175fe43e7fd598347ef0
             </time>
         </span>
     </div>
-    <div class=\"small-12 medium-6 large-6 columns\">
+    <div class=\"small-12 medium-9 large-10 columns\">
         <header class=\"summer-post-header\">
             ";
         // line 16
@@ -131,13 +131,7 @@ class __TwigTemplate_9188c8608e56fbb8a40eff825f83a7cedc053e6175fe43e7fd598347ef0
         echo "        </div>
         
     </div>
-    <div class=\"small-12 medium-3 large-4 columns\">
-        <img src=\"";
-        // line 32
-        echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "image", []), [], "array"), "url", []);
-        echo "\" alt=\"cover-image\" />
-        
-    </div>
+    
 </article>
 ";
     }
@@ -154,7 +148,7 @@ class __TwigTemplate_9188c8608e56fbb8a40eff825f83a7cedc053e6175fe43e7fd598347ef0
 
     public function getDebugInfo()
     {
-        return array (  137 => 32,  131 => 28,  89 => 27,  82 => 23,  78 => 21,  70 => 19,  58 => 17,  56 => 16,  46 => 9,  40 => 6,  35 => 4,  30 => 1,);
+        return array (  131 => 28,  89 => 27,  82 => 23,  78 => 21,  70 => 19,  58 => 17,  56 => 16,  46 => 9,  40 => 6,  35 => 4,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -180,7 +174,7 @@ class __TwigTemplate_9188c8608e56fbb8a40eff825f83a7cedc053e6175fe43e7fd598347ef0
             </time>
         </span>
     </div>
-    <div class=\"small-12 medium-6 large-6 columns\">
+    <div class=\"small-12 medium-9 large-10 columns\">
         <header class=\"summer-post-header\">
             {% if post.header.link %}
                <h3 class=\"summer-post-title\"><a href=\"{{ post.url }}\" rel=\"bookmark\" title=\"{{ post.title }}\" itemprop=\"url\"><i class=\"fa fa-angle-double-right\"></i></a> <a href=\"{{ post.header.link }}\">{{ post.title }}</a></h3>
@@ -197,10 +191,7 @@ class __TwigTemplate_9188c8608e56fbb8a40eff825f83a7cedc053e6175fe43e7fd598347ef0
         </div>
         
     </div>
-    <div class=\"small-12 medium-3 large-4 columns\">
-        <img src=\"{{ page.media[page.header.image].url }}\" alt=\"cover-image\" />
-        
-    </div>
+    
 </article>
 ", "partials/article.html.twig", "/usr/share/nginx/html/user/themes/notepad/templates/partials/article.html.twig");
     }

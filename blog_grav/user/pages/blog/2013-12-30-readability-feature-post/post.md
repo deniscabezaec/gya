@@ -1,7 +1,10 @@
 ---
-title: "Post with Large Feature Image and Text"
+title: 'Post with Large Feature Image and Text'
+published: false
 taxonomy:
-    tag: [sample post, readability]
+    tag:
+        - 'sample post'
+        - readability
 image: tokyo.jpg
 markdown_extra: true
 ---

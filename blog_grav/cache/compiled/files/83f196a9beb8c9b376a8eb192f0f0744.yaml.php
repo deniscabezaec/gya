@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/system/blueprints/user/account.yaml',
-    'modified' => 1560472820,
+    'modified' => 1560785226,
     'data' => [
         'title' => 'Account',
         'form' => [

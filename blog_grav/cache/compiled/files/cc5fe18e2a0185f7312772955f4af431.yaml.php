@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/system/languages/hr.yaml',
-    'modified' => 1557420794,
+    'modified' => 1560785226,
     'data' => [
         'GRAV' => [
             'INFLECTOR_UNCOUNTABLE' => [
