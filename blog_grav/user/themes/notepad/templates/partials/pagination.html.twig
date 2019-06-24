@@ -2,13 +2,13 @@
     {% set base_url = '/' %}
 {% endif %}
 <nav class="pagination" role="navigation">
-    {% if pagination.hasNext %}
-        {% set url = (base_url ~ pagination.params ~ pagination.nextUrl)|replace({'//':'/'}) %}
-        <a class="older-posts" href="{{ url }}">&larr; Más antiguos</a>
+    {% if pagination.hasPrev %}
+        {% set url = (base_url ~ pagination.params ~ pagination.prevUrl)|replace({'//':'/'}) %}
+        <a class="newer-posts" href="{{ url }}">&larr; Recientes </a>
     {% endif %}
     <span class="page-number">Página {{ uri.currentPage }} de {{ pagination|length }}</span>
-    {% if pagination.hasPrev %}
-            {% set url = (base_url ~ pagination.params ~ pagination.prevUrl)|replace({'//':'/'}) %}
-        <a class="newer-posts" href="{{ url }}">Recientes &rarr;</a>
+    {% if pagination.hasNext %}
+        {% set url = (base_url ~ pagination.params ~ pagination.nextUrl)|replace({'//':'/'}) %}
+        <a class="older-posts" href="{{ url }}">Más antiguos &rarr;</a>
     {% endif %}
 </nav>
