@@ -1,8 +1,24 @@
 ---
 title: 'Relog Canvas'
-visible: true
+date: '12-06-2019 16:20'
+metadata:
+    'Graficación y Animación': gya
+    Blog: blog
+    Canvas: canvas
+taxonomy:
+    tag:
+        - blog
+        - gya
+        - canvas
+        - relog
+        - 'sentido contrario'
+layout: post
+description: 'Bandera de jamaica svg'
+markdown_extra: true
 ---
 
+Se denomina reloj al instrumento capaz de medir, mantener e indicar el tiempo en unidades convencionales. 
+<center>
 <div class="column">
     
 <canvas id="canvas" width="400" height="400"
@@ -91,3 +107,4 @@ function drawHand(ctx, pos, length, width) {
 }
 </script>
 </div>
+<center>

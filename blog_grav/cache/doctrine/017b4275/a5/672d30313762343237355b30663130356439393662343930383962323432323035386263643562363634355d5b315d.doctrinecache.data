@@ -1,0 +1,5 @@
+1562193660
+a:2:{s:7:"content";s:730:"<h2>SVG</h2>
+<p>Gráficos vectoriales escalables, o Gráficos vectoriales redimensionables (del inglés Scalable Vector Graphics) o SVG es un formato de gráficos vectoriales bidimensionales, tanto estáticos como animados, en formato XML, cuya especificación es un estándar abierto desarrollado por el W3C desde el año 1999.</p>
+<h2>CANVAS</h2>
+<p>Es un elemento HTML el cual puede ser usado para dibujar gráficos usando scripts (normalmente JavaScript). Este puede, por ejemplo, ser usado para dibujar gráficos, realizar composición de fotos o simples (y no tan simples) animaciones. Las imágenes a la derecha muestran algunos ejemplos de implementaciones <canvas>  las cuales se verán en un futuro en este tutorial.</p>";s:12:"content_meta";N;}
