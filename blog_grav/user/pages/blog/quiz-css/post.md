@@ -15,10 +15,9 @@ description: 'Test de CSS'
 markdown_extra: true
 ---
 
-[Ir a Quiz CSS](https://www.w3schools.com/html/html_quiz.asp)
-
-<br>
 ## CSS##
 En español "Hojas de estilo en cascada", es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.
+
+[Ir a Quiz CSS](https://www.w3schools.com/css/css_quiz.asp)
 
 ## RESULTADOS DEL QUIZ##

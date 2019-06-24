@@ -14,7 +14,7 @@ taxonomy:
         - concrete5
 layout: post
 description: 'CMS Concrete5'
-link: 'http://getgrav.org'
+link: 'https://blog.alexkbza.com/expo_cms/'
 markdown_extra: true
 ---
 

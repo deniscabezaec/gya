@@ -16,10 +16,10 @@ description: 'Test de Html'
 markdown_extra: true
 ---
 
-[Ir a Quiz HTML](https://www.w3schools.com/html/html_quiz.asp)
-
-<br>
 ## HTML##
 Siglas en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas web.
 
+[Ir a Quiz HTML](https://www.w3schools.com/html/html_quiz.asp)
+
 ## RESULTADOS DEL QUIZ##
+![QuizHtml](w3c-html.PNG)

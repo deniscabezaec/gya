@@ -22,20 +22,19 @@ markdown_extra: true
 
 Para el desarrollo del lado del cliente existen muchas opciones, puedes hacer todo desde cero con HTML, CSS3 y JavaScript o usar frameworks y librerias que ahorran el trabajo de crear lo que ya esta hecho, es el caso de:
 
--### Bootstrap###
+### Bootstrap###
 [Sitio Oficial](https://getbootstrap.com/) <br>
 Es una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web.
 
--### JQuery###
+### JQuery###
 [Sitio Oficial](https://jquery.com/) <br>
 Es una biblioteca multiplataforma de JavaScript, creada inicialmente por John Resig, que permite simplificar la manera de interactuar con los documentos HTML, manipular el árbol DOM, manejar eventos, desarrollar animaciones y agregar interacción con la técnica AJAX a páginas web.
 
-Estos son los mas conocidos pero tambien se puede usar los siguientes:
-
-[Foundation](https://foundation.zurb.com/)
-[Font Awesome](https://fontawesome.com/) (Para iconos)
-[Materialize CSS ](https://materializecss.com/)
-[Bulma](https://bulma.io/)
+Estos son los mas conocidos, pero tambien se puede usar los siguientes:
+ - [Foundation](https://foundation.zurb.com/)<br>
+ - [Font Awesome](https://fontawesome.com/) (Para iconos)<br>
+ - [Materialize CSS ](https://materializecss.com/)<br>
+ - [Bulma](https://bulma.io/)
 
   
 

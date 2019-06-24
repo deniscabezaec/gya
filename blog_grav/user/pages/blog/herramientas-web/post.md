@@ -26,17 +26,17 @@ En cómputo teórico y teoría de lenguajes formales una expresión regular, tam
 Acrónimo de What You See Is What You Get, es una frase aplicada a los procesadores de texto y otros editores de texto con formato que permiten escribir un documento mostrando directamente el resultado final, frecuentemente el resultado impreso.
 
 ### REVISIÓN DE SITIOS WEB###
--[DareBoost](https://www.dareboost.com/en) <br>
--[Pingdom Tools](https://tools.pingdom.com/) <br>
--[Markup Validation Service](https://validator.w3.org/) <br>
--[Web Page Test](https://www.webpagetest.org/) <br>
--[GTmetrix](https://gtmetrix.com/) <br>
+- [DareBoost](https://www.dareboost.com/en) <br>
+- [Pingdom Tools](https://tools.pingdom.com/) <br>
+- [Markup Validation Service](https://validator.w3.org/) <br>
+- [Web Page Test](https://www.webpagetest.org/) <br>
+- [GTmetrix](https://gtmetrix.com/) <br>
 
 ### ANALIZAR CERTIFICADOS###
--[Qualys SSL Labs](https://www.ssllabs.com/ssltest/) <br>
+- [Qualys SSL Labs](https://www.ssllabs.com/ssltest/) <br>
 
 ### MONITOREO###
--[Cula](https://cula.io) <br>
+- [Cula](https://cula.io) <br>
 
 ### NAVEGADOR PARA DESARROLLADORES###
--[Firefox Developer Edition](https://www.mozilla.org/es-ES/firefox/developer/) <br>
+- [Firefox Developer Edition](https://www.mozilla.org/es-ES/firefox/developer/) <br>

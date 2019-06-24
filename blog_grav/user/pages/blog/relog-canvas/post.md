@@ -13,17 +13,16 @@ taxonomy:
         - relog
         - 'sentido contrario'
 layout: post
-description: 'Bandera de jamaica svg'
+description: 'Relog realizado con canvas'
 markdown_extra: true
 ---
 
 Se denomina reloj al instrumento capaz de medir, mantener e indicar el tiempo en unidades convencionales. 
-<center>
-<div class="column">
-    
+<center><div class="column"> 
 <canvas id="canvas" width="400" height="400"
 style="background-color:#333">
 </canvas>
+</div><center>
     
 <script>
 var canvas = document.getElementById("canvas");
@@ -106,5 +105,3 @@ function drawHand(ctx, pos, length, width) {
     ctx.rotate(pos);
 }
 </script>
-</div>
-<center>

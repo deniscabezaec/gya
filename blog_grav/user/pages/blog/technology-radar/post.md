@@ -19,7 +19,10 @@ description: 'Documento que establece los cambios que creemos que son relevantes
 markdown_extra: true
 ---
 
-Cada seis meses aproximádamente, [ThoughtWorks](https://www.thoughtworks.com/) publica su [Technology Radar](https://www.thoughtworks.com/es/radar/faq). Lo que comenzó como un experimento interesante, se convirtió en una publicación bastante notable. Lo que recibió mucha atención de nuestros clientes y otros cibernautas.
+Cada seis meses aproximádamente, **ThoughtWorks** publica su **Technology Radar**. Lo que comenzó como un experimento interesante, se convirtió en una publicación bastante notable. Lo que recibió mucha atención de nuestros clientes y otros cibernautas.
+- [ThoughtWorks](https://www.thoughtworks.com/)
+- [Technology Radar](https://www.thoughtworks.com/es/radar/faq)
+
 
 ### ¿Qué es el Technology Radar de ThoughtWorks? ###
 El Radar es un documento que establece los cambios que creemos que son relevantes actualmente en el desarrollo de software — cosas en movimiento a las que creemos que deberían prestar atención y considerar aplicar en sus proyectos. Refleja la opinión idiosincrásica de un grupo de tecnólogos de alto nivel y está basado en nuestras experiencias y trabajo cotidiano. Si bien pensamos que esto resulta interesante, no debería tomarse como un análisis profundo del mercado.

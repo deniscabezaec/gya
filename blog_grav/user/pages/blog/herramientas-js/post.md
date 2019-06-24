@@ -20,6 +20,8 @@ description: 'Herramientas Javascript'
 markdown_extra: true
 ---
 
+JavaScript es uno de los referentes internacionales en la programación de proyectos. Se utiliza para el desarrollo de páginas web, aplicaciones, gestión de servidores y bases de datos.
+
 ### Grunt ###
 [Sitio Oficial](https://gruntjs.com/)<br>
 Es un ejecutor de tareas de JavaScript, una herramienta que se utiliza para realizar automáticamente tareas frecuentes como la minificación, la compilación, las pruebas de unidades y la alineación. Utiliza una interfaz de línea de comandos para ejecutar tareas personalizadas definidas en un archivo.

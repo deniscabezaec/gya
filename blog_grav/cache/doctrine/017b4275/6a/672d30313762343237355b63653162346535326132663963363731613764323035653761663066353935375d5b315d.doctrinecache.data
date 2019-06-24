@@ -1,0 +1,502 @@
+1562206470
+a:2:{s:7:"content";s:21208:"<p>Práctica de Css con los ejercicios que se encuentran en W3School.</p>
+<h3>Tema: Css Syntax</h3>
+<pre><code>        &lt;p&gt;1. Change the color of all &lt;span&gt; p&lt;/span&gt; elements to "red".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                  p{ color:red; }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;2. Change the color of the element with &lt;kbd&gt;id="para1"&lt;/kbd&gt;, to "red".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                  #para1{ color:red; }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css How to&lt;/h4&gt;
+        &lt;p&gt;3. Add an external style sheet with the URL: &lt;kbd&gt;"mystyle.css"&lt;/kbd&gt; .&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                &amp;#60;link rel="stylesheet" href="mystyle.css" type="text/css"&amp;#62;
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;4. Set &lt;kbd&gt;"background-color: linen"&lt;/kbd&gt; for the page, using an internal style sheet.&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                body{ background-color: linen; }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Background&lt;/h4&gt;
+        &lt;p&gt;5. Set &lt;kbd&gt;"paper.gif"&lt;/kbd&gt; as the background image of the page.&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                body { background-image: url("paper.gif"); }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;6. Specify that the background image should be shown once, in the top right corner.&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                body{ 
+                  background-image: url("img_tree.png");
+                  background-repeat: no-repeat;
+                  background-position: right top;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Border&lt;/h4&gt;
+        &lt;p&gt;7. Set a "4px", "dotted" border for &lt;kbd&gt;p&lt;/kbd&gt;&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                p{
+                  border-style: dotted;
+                  border-width: 4px;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;8. Change the 3 border properties, so that they only show the border on the top side.&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                  p {
+                    border-top-style: dotted;
+                    border-top-width: 4px;
+                    border-top-color: red;
+                  }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Margin&lt;/h4&gt;
+        &lt;p&gt;9. Set all margins for &lt;kbd&gt;h1&lt;/kbd&gt; to "25px".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                h1 {
+                  background-color: lightblue;
+                  margin: 25px;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;10. Use the margin property to center align the &lt;kbd&gt;h1&lt;/kbd&gt; element.&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                h1 {
+                  background-color: lightblue;
+                  width: 300px;
+                  margin: auto;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Padding&lt;/h4&gt;
+        &lt;p&gt;11. Set the top padding of &lt;kbd&gt;p&lt;/kbd&gt; to "30px".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                p {
+                  background-color: lightblue;
+                  padding: 30px
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;12. Use the padding property to set the top and bottom paddings for &lt;kbd&gt;p&lt;/kbd&gt; to "25px", and left and right paddings to "50px".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                p {
+                  background-color: lightblue;
+                  padding: 25px 50px;          
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+        &lt;h4 class="mb-3 mt-5"&gt;Tema: Css height/Width&lt;/h4&gt;
+        &lt;p&gt;13. Set the height of &lt;kbd&gt;h1&lt;/kbd&gt; to "100px".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                h1 {
+                  background-color: lightblue;
+                  height: 100px;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;14. Set the width of &lt;kbd&gt;h1&lt;/kbd&gt; to "50%".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                h1 {
+                  background-color: lightblue;
+                  width: 50%;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Box Model&lt;/h4&gt;
+        &lt;p&gt;15. Set the width of the &lt;kbd&gt;div&lt;/kbd&gt; to "200px".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                div {
+                  background-color: lightblue;
+                  width: 200px;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;16. Set the border of the &lt;kbd&gt;div&lt;/kbd&gt; to "25px solid navy".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                div {
+                  background-color: lightblue;
+                  width: 200px;
+                  padding: 25px;
+                  border: 25px solid navy;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Outline&lt;/h4&gt;
+        &lt;p&gt;17. Set a "solid", "5px" outline for &lt;kbd&gt;p&lt;/kbd&gt;&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                p {
+                  outline-style: solid;
+                  outline-width: 5px;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;18. Set the outline color for &lt;kbd&gt;p&lt;/kbd&gt; to "green".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                p {
+                  outline-style: solid;
+                  outline-width: 4px;
+                  outline-color: green;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Text&lt;/h4&gt;
+        &lt;p&gt;19. Set the text color for the &lt;kbd&gt;page&lt;/kbd&gt; to "red", and the text color for &lt;kbd&gt;h1&lt;/kbd&gt; to "blue".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                body {
+                  color: red;
+                }
+
+                h1 {
+                  color: blue;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;20. Style text in &lt;kbd&gt;h1&lt;/kbd&gt; to uppercase letters, and text in &lt;kbd&gt;p&lt;/kbd&gt; to capitalized letters.&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                h1 {
+                  text-transform: uppercase;
+                }
+                p {
+                  text-transform: capitalize;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Font&lt;/h4&gt;
+        &lt;p&gt;21. Set the font family for the &lt;kbd&gt;page&lt;/kbd&gt; to "Courier New", and the font family for &lt;kbd&gt;h1&lt;/kbd&gt; to "Verdana".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                body {
+                  font-family: "Courier New";
+                }
+
+                h1 {
+                  font-family: Verdana;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;22. Show &lt;kbd&gt;p&lt;/kbd&gt; elements as "bold" text.&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                p {
+                  font-weight: bold;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Links&lt;/h4&gt;
+        &lt;p&gt;23. Set the color for links to "green".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                a {
+                  color: green;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;24. Set the background color for visited and unvisited links to "lightblue", and the background color for the hover and active link states to "yellow".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+              /* unvisited link */
+              a:link {
+                background-color: lightblue;
+              }
+
+              /* visited link */
+              a:visited {
+                background-color: lightblue;
+              }
+
+              /* mouse over link */
+              a:hover {
+                background-color: yellow;
+              }
+
+              /* selected link */
+              a:active {
+                background-color: yellow;
+              }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css List&lt;/h4&gt;
+        &lt;p&gt;25. Set the list style for &lt;kbd&gt;unordered lists&lt;/kbd&gt; to "square", and the list style for &lt;kbd&gt;ordered lists&lt;/kbd&gt;  to "upper-roman"&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                ul { list-style-type: square; }
+
+                ol { list-style-type: upper-roman;}
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;26. With the list-style property: Set the &lt;kbd&gt;unordered list&lt;/kbd&gt; marker to "img_marker.png", with a backup style of "circle", and display the markers inside the content flow..&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                ul { list-style: circle inside url('img_marker.png'); }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Tables&lt;/h4&gt;
+        &lt;p&gt;27. Set the border to "2px solid green" for table,&lt;kbd&gt;th and td elements&lt;/kbd&gt; .&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                table, th, td { border: 2px solid green;}
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;28. Collapse the table borders into a single border.&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                table {
+                  border-collapse: collapse;
+                }
+                table, td, th {
+                  border: 1px solid black;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Display/Visibility&lt;/h4&gt;
+        &lt;p&gt;29. Hide the &lt;kbd&gt;h1&lt;/kbd&gt; element. It should still take up the same space as before.&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+               h1 { visibility: hidden;}
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;30. Display the list items as inline elements..&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+              li { display: inline; }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Positioning&lt;/h4&gt;
+        &lt;p&gt;31. Position the &lt;kbd&gt;h1&lt;/kbd&gt; element relative to the browser window. 50px from the top, and 50px from the right.&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                h1 {
+                  position: fixed;
+                  top: 50px;
+                  right: 50px;
+                  color: red;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;32. Position the &lt;kbd&gt;h1&lt;/kbd&gt; element 50px from the left, and 100px from the top, relative to the HTML page.&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                h1 {
+                  position: absolute;
+                  top: 100px;
+                  left: 50px;
+                  color: red;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Overflow&lt;/h4&gt;
+        &lt;p&gt;33. Add a scrollbar to the &lt;kbd&gt;div&lt;/kbd&gt; element.&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                div {
+                  background-color: #eee;
+                  width: 200px;
+                  height: 70px;
+                  border: 1px dotted black;
+                  overflow: scroll;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;34. Specify that the overflowing text in the &lt;kbd&gt;div&lt;/kbd&gt; element should not be visible, not even with scrolling.&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                div {
+                  background-color: lightblue;
+                  width: 200px;
+                  height: 200px;
+                  overflow: hidden;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Align&lt;/h4&gt;
+        &lt;p&gt;35.Center align the &lt;kbd&gt;div&lt;/kbd&gt; element using margins.&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                div {
+                  margin-left: auto;
+                  margin-right: auto;
+                  width: 300px;
+                  background-color: #b0e0e6;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;36. Position the &lt;kbd&gt;div&lt;/kbd&gt; element all the way to the right using absolute positioning.&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                div {
+                  position: absolute;
+                  right: 0px;
+                  width: 300px;
+                  background-color: #b0e0e6;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Combinator&lt;/h4&gt;
+        &lt;p&gt;37. Change the color of all &lt;kbd&gt;p&lt;/kbd&gt; elements, that are descendants of &lt;kbd&gt;div&lt;/kbd&gt; elements, to "red".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                div p { color: red; }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;38. Change the color of &lt;kbd&gt;p&lt;/kbd&gt; elements, that are the adjacent (immediately following) sibling of a &lt;kbd&gt;div&lt;/kbd&gt; element, to "red".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                div + p { color: red; }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+      &lt;/br&gt;
+      &lt;h4 class="mb-3 mt-5"&gt;Tema: Css Pseudo-Classes&lt;/h4&gt;
+        &lt;p&gt;39. Set the background color for visited and unvisited links to "lightblue", and the background color for the hover and active link states to "yellow".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                /* unvisited link */
+                a:link {
+                  background-color: lightblue;
+                }
+
+                /* visited link */
+                a:visited {
+                  background-color: lightblue;
+                }
+
+                /* mouse over link */
+                a:hover {
+                  background-color: yellow;
+                }
+
+                /* selected link */
+                a:active {
+                  background-color: yellow;
+                }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;
+        &lt;p&gt;40. Set the background color of &lt;kbd&gt;input&lt;/kbd&gt; elements that are in focus (clicked or active), to "lightblue".&lt;/p&gt;
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                input:focus { background-color: lightblue; }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;</code></pre>";s:12:"content_meta";N;}

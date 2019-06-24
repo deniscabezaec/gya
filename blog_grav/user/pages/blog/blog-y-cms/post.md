@@ -11,10 +11,10 @@ taxonomy:
         - blog
         - gya
         - cms
-        - crgb
+        - rgb
         - Zengarden
 layout: post
-description: 'CMS Concrete5'
+description: Definiciones
 markdown_extra: true
 ---
 

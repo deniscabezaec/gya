@@ -1,0 +1,9 @@
+1562237818
+a:2:{s:7:"content";s:801:"<p>Es una herramienta para poder monitorear el trafico de tus paginas webs.</p>
+<p>Lo primero que se debe hacer es crear una cuenta <a href="https://tagmanager.google.com/">Tag Manager</a> en y <a href="https://analytics.google.com/analytics/web/">Google Analytics</a>, guardar las etiquetas que te dan en el primero y el ID que te dan al registrarte en analytics.
+<a href="http://getgrav.org/">test</a>
+En <strong>Tag Manager</strong> hay que crear una nueva etiqueta y seleccionar <strong>Google Analytics</strong>, en la configuración de este se debe pegar el ID guardado anteriormente y le dan a guardar.</p>
+<p>En la parte de activación solo debe seleccionar <strong>«all pages»</strong> y luego guardar todo.</p>
+<div>
+![TagManager](tagmanager-min.jpg) ![Analitycs](analitycs-min.png)
+</div>";s:12:"content_meta";N;}

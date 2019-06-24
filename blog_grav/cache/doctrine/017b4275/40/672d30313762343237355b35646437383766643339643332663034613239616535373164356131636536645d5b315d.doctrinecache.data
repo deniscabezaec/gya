@@ -1,0 +1,11 @@
+1562206998
+a:2:{s:7:"content";s:779:"<p>Práctica de Css con los ejercicios que se encuentran en W3School.</p>
+<h3>Tema: Css Syntax</h3>
+<pre><code>&lt;p&gt;1. Change the color of all &lt;span&gt; p&lt;/span&gt; elements to "red".&lt;/p&gt;ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+          &lt;pre&gt;&lt;code class="xml"&gt;
+            &amp;#60;head&amp;#62;
+              &amp;#60;style&amp;#62;
+                  p{ color:red; }
+              &amp;#60;/style&amp;#62;
+            &amp;#60;/head&amp;#62;
+        &lt;/code&gt;&lt;/pre&gt;'</code></pre>";s:12:"content_meta";N;}

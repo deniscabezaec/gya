@@ -1,0 +1,15 @@
+1562236855
+a:2:{s:7:"content";s:1151:"<p>Para el desarrollo del lado del cliente existen muchas opciones, puedes hacer todo desde cero con HTML, CSS3 y JavaScript o usar frameworks y librerias que ahorran el trabajo de crear lo que ya esta hecho, es el caso de:</p>
+<h3>Bootstrap</h3>
+<p><a href="https://getbootstrap.com/">Sitio Oficial</a> <br>
+Es una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web.</p>
+<h3>JQuery</h3>
+<p><a href="https://jquery.com/">Sitio Oficial</a> <br>
+Es una biblioteca multiplataforma de JavaScript, creada inicialmente por John Resig, que permite simplificar la manera de interactuar con los documentos HTML, manipular el árbol DOM, manejar eventos, desarrollar animaciones y agregar interacción con la técnica AJAX a páginas web.</p>
+<p>Estos son los mas conocidos, pero tambien se puede usar los siguientes:</p>
+<ul>
+<li><a href="https://foundation.zurb.com/">Foundation</a><br></li>
+<li><a href="https://fontawesome.com/">Font Awesome</a> (Para iconos)<br></li>
+<li><a href="https://materializecss.com/">Materialize CSS </a><br></li>
+<li><a href="https://bulma.io/">Bulma</a></li>
+</ul>";s:12:"content_meta";N;}
