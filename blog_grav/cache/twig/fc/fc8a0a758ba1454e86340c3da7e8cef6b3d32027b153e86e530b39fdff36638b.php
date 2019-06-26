@@ -36,14 +36,14 @@ class __TwigTemplate_a713a8ce45c67e4f25795f3b988c46c6866d2e639dc04c78c6adcfb98ae
         echo "<nav class=\"pagination\" role=\"navigation\">
     ";
         // line 5
-        if ($this->getAttribute(($context["pagination"] ?? null), "hasNext", [])) {
+        if ($this->getAttribute(($context["pagination"] ?? null), "hasPrev", [])) {
             // line 6
             echo "        ";
-            $context["url"] = twig_replace_filter(((($context["base_url"] ?? null) . $this->getAttribute(($context["pagination"] ?? null), "params", [])) . $this->getAttribute(($context["pagination"] ?? null), "nextUrl", [])), ["//" => "/"]);
+            $context["url"] = twig_replace_filter(((($context["base_url"] ?? null) . $this->getAttribute(($context["pagination"] ?? null), "params", [])) . $this->getAttribute(($context["pagination"] ?? null), "prevUrl", [])), ["//" => "/"]);
             // line 7
-            echo "        <a class=\"older-posts\" href=\"";
+            echo "        <a class=\"newer-posts\" href=\"";
             echo ($context["url"] ?? null);
-            echo "\">&larr; Más antiguos</a>
+            echo "\">&larr; Recientes </a>
     ";
         }
         // line 9
@@ -54,14 +54,14 @@ class __TwigTemplate_a713a8ce45c67e4f25795f3b988c46c6866d2e639dc04c78c6adcfb98ae
         echo "</span>
     ";
         // line 10
-        if ($this->getAttribute(($context["pagination"] ?? null), "hasPrev", [])) {
+        if ($this->getAttribute(($context["pagination"] ?? null), "hasNext", [])) {
             // line 11
-            echo "            ";
-            $context["url"] = twig_replace_filter(((($context["base_url"] ?? null) . $this->getAttribute(($context["pagination"] ?? null), "params", [])) . $this->getAttribute(($context["pagination"] ?? null), "prevUrl", [])), ["//" => "/"]);
+            echo "        ";
+            $context["url"] = twig_replace_filter(((($context["base_url"] ?? null) . $this->getAttribute(($context["pagination"] ?? null), "params", [])) . $this->getAttribute(($context["pagination"] ?? null), "nextUrl", [])), ["//" => "/"]);
             // line 12
-            echo "        <a class=\"newer-posts\" href=\"";
+            echo "        <a class=\"older-posts\" href=\"";
             echo ($context["url"] ?? null);
-            echo "\">Recientes &rarr;</a>
+            echo "\">Más antiguos &rarr;</a>
     ";
         }
         // line 14
@@ -98,14 +98,14 @@ class __TwigTemplate_a713a8ce45c67e4f25795f3b988c46c6866d2e639dc04c78c6adcfb98ae
     {% set base_url = '/' %}
 {% endif %}
 <nav class=\"pagination\" role=\"navigation\">
-    {% if pagination.hasNext %}
-        {% set url = (base_url ~ pagination.params ~ pagination.nextUrl)|replace({'//':'/'}) %}
-        <a class=\"older-posts\" href=\"{{ url }}\">&larr; Más antiguos</a>
+    {% if pagination.hasPrev %}
+        {% set url = (base_url ~ pagination.params ~ pagination.prevUrl)|replace({'//':'/'}) %}
+        <a class=\"newer-posts\" href=\"{{ url }}\">&larr; Recientes </a>
     {% endif %}
     <span class=\"page-number\">Página {{ uri.currentPage }} de {{ pagination|length }}</span>
-    {% if pagination.hasPrev %}
-            {% set url = (base_url ~ pagination.params ~ pagination.prevUrl)|replace({'//':'/'}) %}
-        <a class=\"newer-posts\" href=\"{{ url }}\">Recientes &rarr;</a>
+    {% if pagination.hasNext %}
+        {% set url = (base_url ~ pagination.params ~ pagination.nextUrl)|replace({'//':'/'}) %}
+        <a class=\"older-posts\" href=\"{{ url }}\">Más antiguos &rarr;</a>
     {% endif %}
 </nav>
 ", "partials/pagination.html.twig", "/usr/share/nginx/html/user/themes/notepad/templates/partials/pagination.html.twig");

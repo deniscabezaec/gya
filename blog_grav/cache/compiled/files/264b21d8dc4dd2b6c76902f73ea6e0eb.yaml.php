@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/themes/notepad/blueprints.yaml',
-    'modified' => 1560785226,
+    'modified' => 1561408108,
     'data' => [
         'name' => 'Notepad',
         'version' => '1.4.0',

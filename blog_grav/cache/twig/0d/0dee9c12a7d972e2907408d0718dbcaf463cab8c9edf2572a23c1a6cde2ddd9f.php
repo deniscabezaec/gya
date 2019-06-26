@@ -56,7 +56,7 @@ class __TwigTemplate_9188c8608e56fbb8a40eff825f83a7cedc053e6175fe43e7fd598347ef0
         if ($this->getAttribute($this->getAttribute(($context["post"] ?? null), "header", []), "link", [])) {
             // line 17
             echo "               <h3 class=\"summer-post-title\"><a href=\"";
-            echo $this->getAttribute(($context["post"] ?? null), "url", []);
+            echo $this->getAttribute($this->getAttribute(($context["post"] ?? null), "header", []), "link", []);
             echo "\" rel=\"bookmark\" title=\"";
             echo $this->getAttribute(($context["post"] ?? null), "title", []);
             echo "\" itemprop=\"url\"><i class=\"fa fa-angle-double-right\"></i></a> <a href=\"";
@@ -177,7 +177,7 @@ class __TwigTemplate_9188c8608e56fbb8a40eff825f83a7cedc053e6175fe43e7fd598347ef0
     <div class=\"small-12 medium-9 large-10 columns\">
         <header class=\"summer-post-header\">
             {% if post.header.link %}
-               <h3 class=\"summer-post-title\"><a href=\"{{ post.url }}\" rel=\"bookmark\" title=\"{{ post.title }}\" itemprop=\"url\"><i class=\"fa fa-angle-double-right\"></i></a> <a href=\"{{ post.header.link }}\">{{ post.title }}</a></h3>
+               <h3 class=\"summer-post-title\"><a href=\"{{ post.header.link }}\" rel=\"bookmark\" title=\"{{ post.title }}\" itemprop=\"url\"><i class=\"fa fa-angle-double-right\"></i></a> <a href=\"{{ post.header.link }}\">{{ post.title }}</a></h3>
             {% else %}
              <h3 class=\"summer-post-title\"><a href=\"{{ post.url }}\" itemprop=\"url\">{{ post.title }}</a></h3>
             {% endif %}
