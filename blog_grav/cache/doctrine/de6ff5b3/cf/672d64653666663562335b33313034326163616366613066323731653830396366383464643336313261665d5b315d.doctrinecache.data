@@ -1,5 +1,0 @@
-1562128177
-a:2:{s:7:"content";s:724:"<p>Es una herramienta para poder monitorear el trafico de tus paginas webs.</p>
-<p>Lo primero que se debe hacer es crear una cuenta en <strong><a href="https://tagmanager.google.com/">Tag Manager</a></strong> y <strong><a href="https://analytics.google.com/analytics/web/">Google Analytics</a></strong>, guardar las etiquetas que te dan en el primero y el ID que te dan al registrarte en analytics.</p>
-<p>En <strong>Tag Manager</strong> hay que crear una nueva etiqueta y seleccionar <strong>Google Analytics</strong>, en la configuración de este se debe pegar el ID guardado anteriormente y le dan a guardar.</p>
-<p>En la parte de activación solo debe seleccionar <strong>«all pages»</strong> y luego guardar todo.</p>";s:12:"content_meta";N;}

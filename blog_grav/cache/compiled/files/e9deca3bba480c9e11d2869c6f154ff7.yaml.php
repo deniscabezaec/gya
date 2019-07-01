@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/plugins/admin/languages/sk.yaml',
-    'modified' => 1561408107,
+    'modified' => 1561958005,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'Toto je Beta verzia! Používajte v ostrej prevádzke na vlastné riziko...',

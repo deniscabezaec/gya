@@ -16,7 +16,8 @@ taxonomy:
         - framework
 layout: post
 description: 'Juego realizado con Phaser'
-link: '/resource/game/t_hunter.html'
+link: /resource/game/t_hunter.html
 markdown_extra: true
 ---
 
+Juego realizado con Phaser.
