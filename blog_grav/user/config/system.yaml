@@ -61,7 +61,7 @@ pages:
   etag: true
   vary_accept_encoding: true
   redirect_default_route: false
-  redirect_default_code: '302'
+  redirect_default_code: '301'
   redirect_trailing_slash: true
   ignore_files:
     - .DS_Store

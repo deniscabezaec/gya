@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/config/system.yaml',
-    'modified' => 1561957183,
+    'modified' => 1561958701,
     'data' => [
         'absolute_urls' => false,
         'timezone' => 'America/Guayaquil',
@@ -77,7 +77,7 @@ return [
             'etag' => true,
             'vary_accept_encoding' => true,
             'redirect_default_route' => false,
-            'redirect_default_code' => '302',
+            'redirect_default_code' => '301',
             'redirect_trailing_slash' => true,
             'ignore_files' => [
                 0 => '.DS_Store'
