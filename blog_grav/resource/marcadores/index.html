@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+    <style></style>
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.2/aframe/build/aframe-ar.js"></script>
+  </head>
+  
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>
+    <!-- handle marker with your own pattern ='sourceType: webcam;'> -->
+    <a-marker-camera type='pattern' url='pattern-marcador1.patt'>
+      <a-text value="Hello, World!"></a-text>
+    </a-marker-camera>
+
+    <a-marker preset="hiro">
+      <a-text value="Hello, World!"></a-text>
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+  
+</body>
+</html>
