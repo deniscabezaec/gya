@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/usr/share/nginx/html/user/plugins/login/blueprints.yaml',
-    'modified' => 1561408108,
+    'modified' => 1563189262,
     'data' => [
         'name' => 'Login',
-        'version' => '3.0.2',
+        'version' => '3.0.3',
         'testing' => false,
         'description' => 'Enables user authentication and login screen.',
         'icon' => 'sign-in',
