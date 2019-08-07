@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Graficación y Animación | Flat-File">
+    <meta name="author" content="Denis Cabeza, Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+
+    <title>Ejemplo React</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/cover.css" rel="stylesheet">
+    
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner"></div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Ejemplo React</h1>
+        <br>
+        <div class="container mt-4">
+            <p>
+              Ingrese algún texto:
+            </p>
+            <input id="nombre" type="text" name="nombre" value="Denis">
+            <br><br>
+            <div id="root"></div>
+        </div>
+      </main>
+      <!--
+        Note: this page is a great way to try React but it's not suitable for production.
+        It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+        Read this section for a production-ready setup with JSX:
+        https://reactjs.org/docs/add-react-to-a-website.html#add-jsx-to-a-project
+
+        In a larger project, you can use an integrated toolchain that includes JSX instead:
+        https://reactjs.org/docs/create-a-new-react-app.html
+
+        You can also use React without JSX, in which case you can remove Babel:
+        https://reactjs.org/docs/react-without-jsx.html
+      -->
+
+    
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Development by <a href="https://github.com/DenisCabezaV"><span>Denis</span> Cabeza</a></p>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/babel">
+      function tick() {
+        const element = (
+          <div>
+            <h1>Hola, {document.getElementById('nombre').value}!</h1>
+            <h2>Son las {new Date().toLocaleTimeString()}</h2>
+          </div>
+        );
+        ReactDOM.render(element, document.getElementById('root'));
+      }
+
+      setInterval(tick, 1000);
+    </script>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

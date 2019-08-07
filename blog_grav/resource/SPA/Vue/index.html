@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Graficación y Animación | Flat-File">
+    <meta name="author" content="Denis Cabeza, Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+
+    <title>Ejemplo Vue</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/cover.css" rel="stylesheet">
+    
+    <style>
+      .app-form input{
+        border-radius: 0;
+      }
+      .taskDone {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+            <h1 class="cover-heading">Ejemplo Vue</h1>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        
+        <div id="taskApp" class="col-sm-12 col-sm-offset">
+            
+    
+            <!-- form -->
+            <div class="panel panel-default">
+              <h2 class="text-center">Agregar nueva tarea</h2>
+              <form v-on:submit="addTask" class="app-form">
+                  <input type="text" class="form-control" v-model="tasks.title">
+                  <input type="submit" value="Agregar" class="btn btn-block btn-primary">
+              </form>
+            </div>
+    
+            <!-- table -->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Marca de verificación hecho</th>
+                  <th>Nombre de Tarea</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="task in tasks">
+                  <td>
+                    <input type="checkbox" v-model="task.done">
+                  </td>
+                  <td>
+                    <span :class="{taskDone: task.done}">
+                      {{ task.title }}
+                    </span>
+                  </td>
+                  <td>
+                    <button
+                      v-on:click="deleteTask(task)"
+                      class="btn btn-block btn-danger">
+                      Eliminar
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </main>
+          
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Development by <a href="https://github.com/DenisCabezaV"><span>Denis</span> Cabeza</a></p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var taskApp = new Vue({
+        el: '#taskApp',
+        data: {
+          tasks: [
+            {
+              title: 'tarea1',
+              done: true
+            },
+            {
+              title: 'tarea2',
+              done: false
+            },
+            {
+              title: 'tarea3',
+              done: false
+            },
+            {
+              title: 'tarea4',
+              done: false
+            }
+          ]
+        },
+        methods: {
+          addTask: function (e) {
+            e.preventDefault();
+            this.tasks.push({
+              title: this.tasks.title,
+              done: false
+            });
+          this.tasks.title = '';
+          },
+          deleteTask: function (task) {
+            this.tasks.splice(
+              this.tasks.indexOf(task),
+              1
+            )
+          }
+        }
+      });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

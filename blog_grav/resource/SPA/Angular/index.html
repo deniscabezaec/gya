@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="universidadApp">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Ejemplo Angular</title>
+        
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <!-- Incluir Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>    
+    <body>
+        <div class="container" ng-controller="profesorCtrl">
+            <h1>Profesor</h1>
+            <h4>{{profesor.nombre}}</h4>
+            <hr>
+
+            <div class="row">
+
+                <!-- Div que contiene la imagen del profesor -->
+                <div class="col-sm-3">
+                    <section class="panel">
+                        <div class="panel-body" align="center">
+                            <img ng-src="{{ profesor.foto }}" class="img-circle" alt=""  height="150px" >
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Div, donde se mostrará la bio del profesor -->
+                <div class="col-sm-9">
+                    <section class="panel">
+                        <div class="panel-body">
+                            {{profesor.bio}}
+                            <br>
+                            <br>
+                            <strong>Edad:</strong> {{profesor.edad}} años  
+                            <br>
+                            <button ng-click="editarProfesor()" class="btn btn-primary">Editar</button> 
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-9">
+                    <section class="panel">
+                        <div class="panel-body">
+                            Nombre:
+                            <input type="text" class="form-control" ng-model="editando.nombre">
+                            <br>
+                            Edad:
+                            <input type="number" class="form-control" ng-model="editando.edad">
+                            <br>
+                            Biografía:
+                            <textarea class="form-control" rows="5" ng-model="editando.bio"></textarea>
+                            <br>
+
+                            <button class="btn btn-primary" ng-click="guardarProfesor()">Guardar</button>
+                            <button class="btn btn-danger" ng-click="cancelarFormulario()">Cancelar</button>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <footer class="mastfoot mt-auto">
+                <div class="inner">
+                    <p>Development by <a href="https://github.com/DenisCabezaV"><span>Denis</span> Cabeza</a></p>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Incluir AngularJS -->
+        <script src="js/lib/angular.min.js"></script>
+        <script src="js/app2.js"></script>
+    </body>
+</html>
