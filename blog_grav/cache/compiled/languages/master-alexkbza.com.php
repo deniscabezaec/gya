@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1562718373,
-    'checksum' => '7a3788c1f42460e8697c73e4fba2b18c',
+    'timestamp' => 1564973948,
+    'checksum' => '018fda165d2868a830b5c3a8dc18c4aa',
     'files' => [
         'system/languages' => [
             'ar' => [
@@ -173,7 +173,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
-                'modified' => 1561957915
+                'modified' => 1563189242
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/languages.yaml',
@@ -353,43 +353,43 @@ return [
         'user/plugins/login/languages' => [
             'de' => [
                 'file' => 'user/plugins/login/languages/de.yaml',
-                'modified' => 1561408108
+                'modified' => 1563189262
             ],
             'en' => [
                 'file' => 'user/plugins/login/languages/en.yaml',
-                'modified' => 1561408108
+                'modified' => 1563189262
             ],
             'es' => [
                 'file' => 'user/plugins/login/languages/es.yaml',
-                'modified' => 1561408108
+                'modified' => 1563189262
             ],
             'fr' => [
                 'file' => 'user/plugins/login/languages/fr.yaml',
-                'modified' => 1561408108
+                'modified' => 1563189262
             ],
             'hr' => [
                 'file' => 'user/plugins/login/languages/hr.yaml',
-                'modified' => 1561408108
+                'modified' => 1563189262
             ],
             'hu' => [
                 'file' => 'user/plugins/login/languages/hu.yaml',
-                'modified' => 1561408108
+                'modified' => 1563189262
             ],
             'no' => [
                 'file' => 'user/plugins/login/languages/no.yaml',
-                'modified' => 1561408108
+                'modified' => 1563189262
             ],
             'ro' => [
                 'file' => 'user/plugins/login/languages/ro.yaml',
-                'modified' => 1561408108
+                'modified' => 1563189262
             ],
             'ru' => [
                 'file' => 'user/plugins/login/languages/ru.yaml',
-                'modified' => 1561408108
+                'modified' => 1563189262
             ],
             'uk' => [
                 'file' => 'user/plugins/login/languages/uk.yaml',
-                'modified' => 1561408108
+                'modified' => 1563189262
             ]
         ]
     ],

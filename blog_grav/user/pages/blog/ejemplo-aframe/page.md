@@ -1,6 +1,6 @@
 ---
 title: 'Ejemplo A-Frame'
-date: '10-06-2019 16:20'
+date: '10-07-2019 16:20'
 metadata:
     'Graficación y Animación': gya
     Blog: blog
@@ -11,12 +11,12 @@ taxonomy:
     tag:
         - blog
         - gya
-        - vr
         - framework
+        - vr
         - aframe
 layout: post
 description: 'Framework para VR'
-link: /resourse/vr/aframe.html
+link: /resource/vr/aframe.html
 markdown_extra: true
 ---
 

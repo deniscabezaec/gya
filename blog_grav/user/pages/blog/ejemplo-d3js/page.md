@@ -1,6 +1,6 @@
 ---
 title: 'Ejemplo D3js'
-date: '10-06-2019 16:40'
+date: '10-07-2019 16:40'
 metadata:
     'Graficación y Animación': gya
     Blog: blog
